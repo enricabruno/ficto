@@ -1,0 +1,479 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ficto: <https://example.org/ficto/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/ficto/Agent/caterina_ciccotti> a crm:E39 ;
+    rdfs:label "Caterina Ciccotti"^^xsd:string ;
+    owl:sameAs "http://id.sbn.it/bid/UBOV366459"^^xsd:anyURI .
+
+<https://example.org/ficto/Agent/giancarlo_carlotti> a crm:E39 ;
+    rdfs:label "Giancarlo Carlotti"^^xsd:string ;
+    owl:sameAs "http://viaf.org/viaf/71171353"^^xsd:anyURI .
+
+<https://example.org/ficto/Agent/joseph_bell> a crm:E39 ;
+    rdfs:label "Joseph Bell"^^xsd:string ;
+    owl:sameAs "https://viaf.org/en/viaf/65206842"^^xsd:anyURI .
+
+<https://example.org/ficto/Agent/maria_gallone> a crm:E39 ;
+    rdfs:label "Maria Gallone"^^xsd:string ;
+    owl:sameAs "http://viaf.org/viaf/2984147967353184200003"^^xsd:anyURI .
+
+<https://example.org/ficto/Agent/napoleon> a crm:E39 ;
+    rdfs:label "Napoleone Bonaparte"^^xsd:string ;
+    owl:sameAs "https://viaf.org/en/viaf/106964661"^^xsd:anyURI .
+
+<https://example.org/ficto/Character/drebber_doyle1> a frbroo:F38 ;
+    rdfs:label "Enoch J. Drebber"^^xsd:string ;
+    ficto:narrativeRole ficto:object .
+
+<https://example.org/ficto/Character/dupin_fl> a frbroo:F38 ;
+    rdfs:label "Auguste Dupin"^^xsd:string ;
+    frbroo:R57 ficto:dupin_1 ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/gregson_doyle_1> a frbroo:F38 ;
+    rdfs:label "Tobias Gregson"^^xsd:string ;
+    frbroo:R57 ficto:metropolitan_police ;
+    ficto:narrativeRole ficto:destinator .
+
+<https://example.org/ficto/Character/hope_doyle1> a frbroo:F38 ;
+    rdfs:label "Jefferson Hope"^^xsd:string ;
+    ficto:narrativeRole ficto:opposer .
+
+<https://example.org/ficto/Character/lestrade_doyle1> a frbroo:F38 ;
+    rdfs:label "Lestrade"^^xsd:string ;
+    frbroo:R57 ficto:metropolitan_police ;
+    ficto:narrativeRole ficto:opposer .
+
+<https://example.org/ficto/Character/lestrade_lipo> a frbroo:F38 ;
+    rdfs:label "Lestrade"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/moriarty_doyle3> a frbroo:F38 ;
+    rdfs:label "Professor Moriarty"^^xsd:string ;
+    frbroo:R57 ficto:napoleon ;
+    ficto:narrativeRole ficto:opposer .
+
+<https://example.org/ficto/Character/moriarty_lipo> a frbroo:F38 ;
+    rdfs:label "Professor Moriarty"^^xsd:string ;
+    ficto:narrativeRole ficto:opposer .
+
+<https://example.org/ficto/Character/mortimer_doyle2> a frbroo:F38 ;
+    rdfs:label "James Mortimer"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/poirot_fl> a frbroo:F38 ;
+    rdfs:label "Hercule Poirot"^^xsd:string ;
+    frbroo:R57 ficto:poirot_1 ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/sherlock_doyle1> a frbroo:F38 ;
+    rdfs:label "Sherlock Holmes"^^xsd:string ;
+    frbroo:R57 ficto:joseph_bell ;
+    ficto:isInspiredBy ficto:dupin_1 ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/sherlock_doyle2> a frbroo:F38 ;
+    rdfs:label "Sherlock Holmes"^^xsd:string ;
+    frbroo:R57 ficto:joseph_bell ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/sherlock_doyle3> a frbroo:F38 ;
+    rdfs:label "Sherlock Holmes"^^xsd:string ;
+    frbroo:R57 ficto:joseph_bell ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/sherlock_fl> a frbroo:F38 ;
+    rdfs:label "Sherlock Holmes"^^xsd:string ;
+    frbroo:R57 ficto:joseph_bell ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/sherlock_lipo> a frbroo:F38 ;
+    rdfs:label "Sherlock Holmes"^^xsd:string ;
+    frbroo:R57 ficto:joseph_bell ;
+    ficto:isInspiredBy ficto:dupin_1,
+        ficto:little_red_riding_hood ;
+    ficto:narrativeRole ficto:subject .
+
+<https://example.org/ficto/Character/stamford_doyle1> a frbroo:F38 ;
+    rdfs:label "Stamford"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/stangerson_doyle1> a frbroo:F38 ;
+    rdfs:label "Joseph Stangerson"^^xsd:string ;
+    ficto:narrativeRole ficto:object .
+
+<https://example.org/ficto/Character/watson_doyle1> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/watson_doyle2> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/watson_doyle3> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/watson_fl> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/Character/watson_lipo> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole ficto:helper .
+
+<https://example.org/ficto/CollectiveAgent/f&l> a lrmoo:F55 ;
+    rdfs:label "Fruttero & Lucentini"^^xsd:string ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1471043"^^xsd:anyURI .
+
+<https://example.org/ficto/CollectiveAgent/metropolitan_police> a lrmoo:F55 ;
+    rdfs:label "Metropolitan Police Office"^^xsd:string ;
+    owl:sameAs "https://viaf.org/en/viaf/153917795"^^xsd:anyURI .
+
+<https://example.org/ficto/CollectiveAgent/oulipopo> a lrmoo:F55 ;
+    rdfs:label "OuLiPoPo (LIttérature POlicière)"^^xsd:string ;
+    owl:sameAs "http://viaf.org/viaf/150855006"^^xsd:anyURI .
+
+<https://example.org/ficto/ExpressionCreation/le_loup_chantant_exprcr> a lrmoo:F28 ;
+    rdfs:label "Le loup chantant de Forrest Gate"^^xsd:string ;
+    lrmoo:R17 <https://example.org/ficto/Expression/le_loup_chantant_expr> ;
+    rdau:P60447 <https://example.org/ficto/Agent/oulipopo> ;
+    crm:P2 "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    crm:P4 "1974"^^xsd:gYear ;
+    crm:P94 <https://example.org/ficto/Diegesis/diegesis_3> .
+
+<https://example.org/ficto/ExpressionCreation/mastino_baskerville_exprcr> a lrmoo:F28 ;
+    rdfs:label "Il mastino dei Baskerville"^^xsd:string ;
+    lrmoo:R17 <https://example.org/ficto/Expression/mastino_baskerville_expr> ;
+    rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
+    crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
+    crm:P4 "2015"^^xsd:gYear ;
+    crm:P94 <https://example.org/ficto/Diegesis/diegesis_5> .
+
+<https://example.org/ficto/ExpressionCreation/problema_finale_exprcr> a lrmoo:F28 ;
+    rdfs:label "Il problema finale"^^xsd:string ;
+    lrmoo:R17 <https://example.org/ficto/Expression/problema_finale_expr> ;
+    rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
+    crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
+    crm:P4 "2018"^^xsd:gYear ;
+    crm:P94 <https://example.org/ficto/Diegesis/diegesis_2> .
+
+<https://example.org/ficto/ExpressionCreation/studio_rosso_exprcr> a lrmoo:F28 ;
+    rdfs:label "Uno studio in rosso"^^xsd:string ;
+    lrmoo:R17 <https://example.org/ficto/Expression/studio_rosso_expr> ;
+    rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
+    crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
+    crm:P4 "2015"^^xsd:gYear ;
+    crm:P94 <https://example.org/ficto/Diegesis/diegesis_1> .
+
+<https://example.org/ficto/ExpressionCreation/verità_d_exprcr> a lrmoo:F28 ;
+    rdfs:label "La verità sul caso D."^^xsd:string ;
+    lrmoo:R17 <https://example.org/ficto/Expression/verità_D_expr> ;
+    rdau:P60447 <https://example.org/ficto/Agent/f&l> ;
+    crm:P2 "http://vocab.getty.edu/page/aat/300049945"^^xsd:anyURI ;
+    crm:P4 "1989"^^xsd:gYear ;
+    crm:P94 <https://example.org/ficto/Diegesis/diegesis_4> .
+
+<https://example.org/ficto/Genre/detective_fiction> a ficto:LiteraryGenre ;
+    rdfs:label "Detective fiction"^^xsd:string ;
+    owl:sameAs "http://vocab.getty.edu/page/aat/300252918"^^xsd:anyURI .
+
+<https://example.org/ficto/Narrative/narrative_1> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr1.1,
+        ficto:narr_seg_expr1.10,
+        ficto:narr_seg_expr1.11,
+        ficto:narr_seg_expr1.12,
+        ficto:narr_seg_expr1.13,
+        ficto:narr_seg_expr1.14,
+        ficto:narr_seg_expr1.15,
+        ficto:narr_seg_expr1.16,
+        ficto:narr_seg_expr1.17,
+        ficto:narr_seg_expr1.18,
+        ficto:narr_seg_expr1.19,
+        ficto:narr_seg_expr1.2,
+        ficto:narr_seg_expr1.20,
+        ficto:narr_seg_expr1.21,
+        ficto:narr_seg_expr1.22,
+        ficto:narr_seg_expr1.23,
+        ficto:narr_seg_expr1.24,
+        ficto:narr_seg_expr1.25,
+        ficto:narr_seg_expr1.26,
+        ficto:narr_seg_expr1.27,
+        ficto:narr_seg_expr1.28,
+        ficto:narr_seg_expr1.29,
+        ficto:narr_seg_expr1.3,
+        ficto:narr_seg_expr1.30,
+        ficto:narr_seg_expr1.31,
+        ficto:narr_seg_expr1.32,
+        ficto:narr_seg_expr1.33,
+        ficto:narr_seg_expr1.34,
+        ficto:narr_seg_expr1.35,
+        ficto:narr_seg_expr1.36,
+        ficto:narr_seg_expr1.37,
+        ficto:narr_seg_expr1.38,
+        ficto:narr_seg_expr1.39,
+        ficto:narr_seg_expr1.4,
+        ficto:narr_seg_expr1.40,
+        ficto:narr_seg_expr1.41,
+        ficto:narr_seg_expr1.42,
+        ficto:narr_seg_expr1.43,
+        ficto:narr_seg_expr1.44,
+        ficto:narr_seg_expr1.45,
+        ficto:narr_seg_expr1.46,
+        ficto:narr_seg_expr1.47,
+        ficto:narr_seg_expr1.48,
+        ficto:narr_seg_expr1.49,
+        ficto:narr_seg_expr1.5,
+        ficto:narr_seg_expr1.50,
+        ficto:narr_seg_expr1.51,
+        ficto:narr_seg_expr1.52,
+        ficto:narr_seg_expr1.53,
+        ficto:narr_seg_expr1.54,
+        ficto:narr_seg_expr1.55,
+        ficto:narr_seg_expr1.56,
+        ficto:narr_seg_expr1.57,
+        ficto:narr_seg_expr1.58,
+        ficto:narr_seg_expr1.6,
+        ficto:narr_seg_expr1.7,
+        ficto:narr_seg_expr1.8,
+        ficto:narr_seg_expr1.9 .
+
+<https://example.org/ficto/Narrative/narrative_2> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_2.1,
+        ficto:narr_seg_expr_2.10,
+        ficto:narr_seg_expr_2.11,
+        ficto:narr_seg_expr_2.12,
+        ficto:narr_seg_expr_2.13,
+        ficto:narr_seg_expr_2.14,
+        ficto:narr_seg_expr_2.15,
+        ficto:narr_seg_expr_2.16,
+        ficto:narr_seg_expr_2.17,
+        ficto:narr_seg_expr_2.18,
+        ficto:narr_seg_expr_2.19,
+        ficto:narr_seg_expr_2.2,
+        ficto:narr_seg_expr_2.20,
+        ficto:narr_seg_expr_2.21,
+        ficto:narr_seg_expr_2.22,
+        ficto:narr_seg_expr_2.23,
+        ficto:narr_seg_expr_2.24,
+        ficto:narr_seg_expr_2.25,
+        ficto:narr_seg_expr_2.26,
+        ficto:narr_seg_expr_2.27,
+        ficto:narr_seg_expr_2.28,
+        ficto:narr_seg_expr_2.29,
+        ficto:narr_seg_expr_2.3,
+        ficto:narr_seg_expr_2.30,
+        ficto:narr_seg_expr_2.31,
+        ficto:narr_seg_expr_2.32,
+        ficto:narr_seg_expr_2.33,
+        ficto:narr_seg_expr_2.34,
+        ficto:narr_seg_expr_2.35,
+        ficto:narr_seg_expr_2.36,
+        ficto:narr_seg_expr_2.37,
+        ficto:narr_seg_expr_2.4,
+        ficto:narr_seg_expr_2.5,
+        ficto:narr_seg_expr_2.6,
+        ficto:narr_seg_expr_2.7,
+        ficto:narr_seg_expr_2.8,
+        ficto:narr_seg_expr_2.9 .
+
+<https://example.org/ficto/Narrative/narrative_3> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_3.1,
+        ficto:narr_seg_expr_3.10,
+        ficto:narr_seg_expr_3.11,
+        ficto:narr_seg_expr_3.12,
+        ficto:narr_seg_expr_3.13,
+        ficto:narr_seg_expr_3.14,
+        ficto:narr_seg_expr_3.15,
+        ficto:narr_seg_expr_3.16,
+        ficto:narr_seg_expr_3.17,
+        ficto:narr_seg_expr_3.18,
+        ficto:narr_seg_expr_3.2,
+        ficto:narr_seg_expr_3.3,
+        ficto:narr_seg_expr_3.4,
+        ficto:narr_seg_expr_3.5,
+        ficto:narr_seg_expr_3.6,
+        ficto:narr_seg_expr_3.7,
+        ficto:narr_seg_expr_3.8,
+        ficto:narr_seg_expr_3.9 .
+
+<https://example.org/ficto/Narrative/narrative_4> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_4.1,
+        ficto:narr_seg_expr_4.10,
+        ficto:narr_seg_expr_4.11,
+        ficto:narr_seg_expr_4.12,
+        ficto:narr_seg_expr_4.13,
+        ficto:narr_seg_expr_4.14,
+        ficto:narr_seg_expr_4.15,
+        ficto:narr_seg_expr_4.16,
+        ficto:narr_seg_expr_4.17,
+        ficto:narr_seg_expr_4.18,
+        ficto:narr_seg_expr_4.19,
+        ficto:narr_seg_expr_4.2,
+        ficto:narr_seg_expr_4.20,
+        ficto:narr_seg_expr_4.21,
+        ficto:narr_seg_expr_4.22,
+        ficto:narr_seg_expr_4.23,
+        ficto:narr_seg_expr_4.24,
+        ficto:narr_seg_expr_4.25,
+        ficto:narr_seg_expr_4.26,
+        ficto:narr_seg_expr_4.27,
+        ficto:narr_seg_expr_4.28,
+        ficto:narr_seg_expr_4.29,
+        ficto:narr_seg_expr_4.3,
+        ficto:narr_seg_expr_4.30,
+        ficto:narr_seg_expr_4.4,
+        ficto:narr_seg_expr_4.5,
+        ficto:narr_seg_expr_4.6,
+        ficto:narr_seg_expr_4.7,
+        ficto:narr_seg_expr_4.8,
+        ficto:narr_seg_expr_4.9 .
+
+<https://example.org/ficto/Narrative/narrative_5> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_5.1,
+        ficto:narr_seg_expr_5.10,
+        ficto:narr_seg_expr_5.11,
+        ficto:narr_seg_expr_5.12,
+        ficto:narr_seg_expr_5.13,
+        ficto:narr_seg_expr_5.14,
+        ficto:narr_seg_expr_5.15,
+        ficto:narr_seg_expr_5.16,
+        ficto:narr_seg_expr_5.2,
+        ficto:narr_seg_expr_5.3,
+        ficto:narr_seg_expr_5.4,
+        ficto:narr_seg_expr_5.5,
+        ficto:narr_seg_expr_5.6,
+        ficto:narr_seg_expr_5.7,
+        ficto:narr_seg_expr_5.8,
+        ficto:narr_seg_expr_5.9 .
+
+<https://example.org/ficto/Narrator/narrator_1.1> a ficto:Narrator ;
+    owl:sameAs ficto:watson_doyle1 ;
+    ficto:hasNarrativeLevel ficto:intra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:internal .
+
+<https://example.org/ficto/Narrator/narrator_1.2> a ficto:Narrator ;
+    ficto:hasNarrativeLevel ficto:extra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:zero .
+
+<https://example.org/ficto/Narrator/narrator_2.1> a ficto:Narrator ;
+    owl:sameAs ficto:watson_doyle2 ;
+    ficto:hasNarrativeLevel ficto:intra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:internal .
+
+<https://example.org/ficto/Narrator/narrator_2.2> a ficto:Narrator ;
+    ficto:hasNarrativeLevel ficto:extra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:zero .
+
+<https://example.org/ficto/Narrator/narrator_3.1> a ficto:Narrator ;
+    owl:sameAs ficto:watson_doyle3 ;
+    ficto:hasNarrativeLevel ficto:extra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:zero .
+
+<https://example.org/ficto/Narrator/narrator_3.2> a ficto:Narrator ;
+    ficto:hasNarrativeLevel ficto:intra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:internal .
+
+<https://example.org/ficto/Narrator/narrator_4.1> a ficto:Narrator ;
+    owl:sameAs ficto:watson_doyle4 ;
+    ficto:hasNarrativeLevel ficto:extra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:zero .
+
+<https://example.org/ficto/Narrator/narrator_4.2> a ficto:Narrator ;
+    ficto:hasNarrativeLevel ficto:intra-diegetic ;
+    ficto:hasNarrativePosition ficto:homo-diegetic ;
+    ficto:hasPointOfView ficto:internal .
+
+<https://example.org/ficto/Narrator/narrator_5.1> a ficto:Narrator ;
+    ficto:hasNarrativeLevel ficto:extra-diegetic ;
+    ficto:hasNarrativePosition ficto:etero-diegetic ;
+    ficto:hasPointOfView ficto:zero .
+
+<https://example.org/ficto/WorkCreation/hound_baskervilles_workcr> a lrmoo:F27 ;
+    rdfs:label "«The Hound Of The Baskervilles»"^^xsd:string ;
+    lrmoo:R16 <https://example.org/ficto/Work/hound_baskervilles_work> ;
+    rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
+    rdau:P60527 "1887"^^xsd:gYear .
+
+<https://example.org/ficto/WorkCreation/le_loup_chantant_workcr> a lrmoo:F27 ;
+    rdfs:label "Le loup chantant de Forrest Gate"^^xsd:string ;
+    lrmoo:R16 <https://example.org/ficto/Work/le_loup_chantant_work> ;
+    rdau:P60447 <https://example.org/ficto/Agent/oulipopo> ;
+    rdau:P60527 "1975"^^xsd:gYear .
+
+<https://example.org/ficto/WorkCreation/study_scarlet_workcr> a lrmoo:F27 ;
+    rdfs:label "A Study in Scarlet"^^xsd:string ;
+    lrmoo:R16 <https://example.org/ficto/Work/study_scarlet_work> ;
+    rdau:P60447 <https://example.org/ficto/Agent/arthur_Doyle> ;
+    rdau:P60527 "1887"^^xsd:gYear .
+
+<https://example.org/ficto/WorkCreation/the_final_problem_workcr> a lrmoo:F27 ;
+    rdfs:label "The final problem"^^xsd:string ;
+    lrmoo:R16 <https://example.org/ficto/Work/the_final_problem_work> ;
+    rdau:P60447 <https://example.org/ficto/Agent/arthur_Doyle> ;
+    rdau:P60527 "1893"^^xsd:gYear .
+
+<https://example.org/ficto/WorkCreation/verità_d_workcr> a lrmoo:F27 ;
+    rdfs:label "La verità sul caso D."^^xsd:string ;
+    lrmoo:R16 <https://example.org/ficto/Work/verità_d_work> ;
+    rdau:P60447 <https://example.org/ficto/Agent/f&l> ;
+    rdau:P60527 "1989"^^xsd:gYear .
+
+<https://example.org/ficto/Expression/verità_d_expr> a lrmoo:F2 ;
+    rdfs:label "La verità sul caso D."^^xsd:string ;
+    crm:P72 "ita"^^xsd:language .
+
+<https://example.org/ficto/Work/hound_baskervilles_work> a lrmoo:F1 ;
+    rdfs:label "The Hound Of The Baskervilles"^^xsd:string ;
+    lrmoo:R3 <https://example.org/ficto/Expression/mastino_baskerville_expr> .
+
+<https://example.org/ficto/Work/le_loup_chantant_work> a lrmoo:F1 ;
+    rdfs:label "Le loup chantant de Forrest Gate"^^xsd:string ;
+    lrmoo:R3 <https://example.org/ficto/Expression/le_loup_chantant_expr> .
+
+<https://example.org/ficto/Work/study_scarlet_work> a lrmoo:F1 ;
+    rdfs:label "A Study in Scarlet"^^xsd:string ;
+    lrmoo:R3 <https://example.org/ficto/Expression/studio_rosso_expr> .
+
+<https://example.org/ficto/Work/the_final_problem_work> a lrmoo:F1 ;
+    rdfs:label "The final problem"^^xsd:string ;
+    lrmoo:R3 <https://example.org/ficto/Expression/problema_finale_expr> .
+
+<https://example.org/ficto/Work/verità_d_work> a lrmoo:F1 ;
+    rdfs:label "La verità sul caso D."^^xsd:string ;
+    lrmoo:R3 <https://example.org/ficto/Expression/verità_d_expr> .
+
+<https://example.org/ficto/Expression/le_loup_chantant_expr> a lrmoo:F2 ;
+    rdfs:label "Le loup chantant de Forrest Gate"^^xsd:string ;
+    crm:P72 "fra"^^xsd:language .
+
+<https://example.org/ficto/Expression/mastino_baskerville_expr> a lrmoo:F2 ;
+    rdfs:label "Il mastino di Baskerville"^^xsd:string ;
+    crm:P72 "ita"^^xsd:language .
+
+<https://example.org/ficto/Expression/problema_finale_expr> a lrmoo:F2 ;
+    rdfs:label "Il problema finale"^^xsd:string ;
+    crm:P72 "ita"^^xsd:language .
+
+<https://example.org/ficto/Expression/studio_rosso_expr> a lrmoo:F2 ;
+    rdfs:label "Uno studio in rosso"^^xsd:string ;
+    crm:P72 "ita"^^xsd:language .
+
+<https://example.org/ficto/Agent/arthur_doyle> a crm:E39 ;
+    rdfs:label "Arhur Conan Doyle"^^xsd:string ;
+    owl:sameAs "https://viaf.org/en/viaf/65283845"^^xsd:anyURI .
+
