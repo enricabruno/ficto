@@ -1,6 +1,6 @@
-lrmoo:F2,rdfs:label,crm:P72
-studio_rosso_expr,Uno studio in rosso,ita
-problema_finale_expr,Il problema finale,ita
-le_loup_chantant_expr,Le loup chantant de Forrest Gate,fra
-verità_d_expr,La verità sul caso D.,ita
-mastino_baskerville_expr,Il mastino di Baskerville,ita
+lrmoo:F2,rdfs:label,crm:P72,rdau:P60385
+studio_rosso_expr,Uno studio in rosso,ita,giancarlo_carlotti
+problema_finale_expr,Il problema finale,ita,maria_gallone
+le_loup_chantant_expr,Le loup chantant de Forrest Gate,fra,
+verità_d_expr,La verità sul caso D.,ita,
+mastino_baskerville_expr,Il mastino di Baskerville,ita,caterina_ciccotti
