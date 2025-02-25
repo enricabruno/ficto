@@ -29,7 +29,7 @@ g.bind("prov", prov)
 g.bind("cito", cito)
 
 # CSV WORK CREATION
-with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - WorkCreation.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - WorkCreation.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -114,7 +114,7 @@ with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - WorkCreation.csv
                     g.add((subj, predicate, obj))
 
 # CSV WORK
-with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - Work.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Work.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -199,7 +199,7 @@ with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - Work.csv", mode=
                     g.add((subj, predicate, obj))
 
 # CSV EXPRESSION CREATION
-with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - ExpressionCreation.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - ExpressionCreation.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -277,14 +277,14 @@ with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - ExpressionCreati
                     elif key=="lrmoo:R3" or key=="lrmoo:R17":
                         obj = URIRef(ficto+"Expression/"+str(value))
                     elif key=="crm:P94":
-                        obj = URIRef(ficto+"Diegesis/"+str(value))
+                        obj = URIRef(ficto+"Narrative/"+str(value))
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
 # CSV EXPRESSION
-with open("/Users/enrica/Desktop/ficto/csv-files/dataset-MITE - Expression.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Expression.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -788,7 +788,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrato
 
                     g.add((subj, predicate, obj))
 
-# CSV COMCEPT
+# CSV CONCEPT
 with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Concept.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
@@ -927,6 +927,445 @@ with open("//Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrat
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
+
+# ANAGR STATUS
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - AnagraphicalStatus.csv", mode="r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Iteration through each row
+    for row in csv_reader:
+        #Iterate through each key of the row
+        for key in row.keys():
+            # Retrieves the value of the current key and removes whitespaces
+            value = row.get(key).strip()
+
+            # Reg ex for capital letters and URIs
+            capital_letter_regex = re.compile(r'^[A-ZÉ]')
+            http_regex = re.compile(r'\bhttps?://\S+')
+            uncinate_regex = re.compile(r'^«[^»]*»')
+
+            # Add a triple that associates the first column's value in the row with the type of entity
+            g.add((URIRef(ficto+"AnagraphicalStatus/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.AnagraphicalStatus))
+
+            # Skip the first key
+            if key != list (row.keys())[0]:
+
+                # Check if the value is empy
+                if value:
+
+                    # Subject
+                    subj = URIRef(ficto+"AnagraphicalStatus/"+str(row.get(list(row.keys())[0])))
+
+                    # Split the predicate in prefix and suffix
+                    column_split = str(key).split(":")
+                    prefix = column_split[0]
+                    suffix = column_split[1]
+
+                    namespaces = {"ficto":"https://example.org/ficto/",
+                    "lrmoo":"http://iflastandards.info/ns/lrm/lrmoo/",
+                    "frbroo":"http://iflastandards.info/ns/fr/frbr/frbroo/",
+                    "rdau":"http://rdaregistry.info/Elements/u/",
+                    "rdfs":"http://www.w3.org/TR/rdf11-schema/",
+                    "crm":"http://www.cidoc-crm.org/cidoc-crm/",
+                    "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "prov":"http://www.w3.org/ns/prov#",
+                    "owl" : "http://www.w3.org/TR/owl-ref/",
+                    "rdfs" : "http://www.w3.org/TR/rdf11-schema/",
+                    "dul" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "cito" : "http://purl.org/spar/cito/",
+                    "skos" : "http://www.w3.org/2004/02/skos/core#"}
+
+                    # Check if the prefix is in the Dict and create the predicate URI
+                    predicate = ''
+                    if prefix in namespaces:
+                        base_uri = namespaces[prefix]
+                        predicate = URIRef(base_uri+suffix)
+                        if prefix == "owl":
+                            predicate = OWL.sameAs
+                        if prefix == "rdfs":
+                            predicate = RDFS.label
+
+                    # Determine the object
+                    obj = ''
+                    # String=value with capital letters
+                    if capital_letter_regex.match(value) or uncinate_regex.match(value):
+                        obj = Literal(value, datatype=XSD.string)
+                    # String URI=value is a URI
+                    elif http_regex.match(value):
+                        obj = Literal(value, datatype=XSD.anyURI)
+                    # concept di skos:related
+                    elif key=="skos:related":
+                        obj = URIRef(ficto+"Concept/"+str(value))
+                    # Otherwise, value=URI
+                    else:
+                        obj = URIRef(ficto+str(value))
+
+                    g.add((subj, predicate, obj))
+
+# CHAR/PS
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - CharacterAndPsychology.csv", mode="r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Iteration through each row
+    for row in csv_reader:
+        #Iterate through each key of the row
+        for key in row.keys():
+            # Retrieves the value of the current key and removes whitespaces
+            value = row.get(key).strip()
+
+            # Reg ex for capital letters and URIs
+            capital_letter_regex = re.compile(r'^[A-ZÉ]')
+            http_regex = re.compile(r'\bhttps?://\S+')
+            uncinate_regex = re.compile(r'^«[^»]*»')
+
+            # Add a triple that associates the first column's value in the row with the type of entity
+            g.add((URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.CharacterAndPsychology))
+
+            # Skip the first key
+            if key != list (row.keys())[0]:
+
+                # Check if the value is empy
+                if value:
+
+                    # Subject
+                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+
+                    # Split the predicate in prefix and suffix
+                    column_split = str(key).split(":")
+                    prefix = column_split[0]
+                    suffix = column_split[1]
+
+                    namespaces = {"ficto":"https://example.org/ficto/",
+                    "lrmoo":"http://iflastandards.info/ns/lrm/lrmoo/",
+                    "frbroo":"http://iflastandards.info/ns/fr/frbr/frbroo/",
+                    "rdau":"http://rdaregistry.info/Elements/u/",
+                    "rdfs":"http://www.w3.org/TR/rdf11-schema/",
+                    "crm":"http://www.cidoc-crm.org/cidoc-crm/",
+                    "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "prov":"http://www.w3.org/ns/prov#",
+                    "owl" : "http://www.w3.org/TR/owl-ref/",
+                    "rdfs" : "http://www.w3.org/TR/rdf11-schema/",
+                    "dul" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "cito" : "http://purl.org/spar/cito/",
+                    "skos" : "http://www.w3.org/2004/02/skos/core#"}
+
+                    # Check if the prefix is in the Dict and create the predicate URI
+                    predicate = ''
+                    if prefix in namespaces:
+                        base_uri = namespaces[prefix]
+                        predicate = URIRef(base_uri+suffix)
+                        if prefix == "owl":
+                            predicate = OWL.sameAs
+                        if prefix == "rdfs":
+                            predicate = RDFS.label
+
+                    # Determine the object
+                    obj = ''
+                    # String=value with capital letters
+                    if capital_letter_regex.match(value) or uncinate_regex.match(value):
+                        obj = Literal(value, datatype=XSD.string)
+                    # String URI=value is a URI
+                    elif http_regex.match(value):
+                        obj = Literal(value, datatype=XSD.anyURI)
+                    # concept di skos:related
+                    elif key=="skos:related":
+                        obj = URIRef(ficto+"Concept/"+str(value))
+                    # Otherwise, value=URI
+                    else:
+                        obj = URIRef(ficto+str(value))
+
+                    g.add((subj, predicate, obj))
+
+# PRAXIS
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Praxis.csv", mode="r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Iteration through each row
+    for row in csv_reader:
+        #Iterate through each key of the row
+        for key in row.keys():
+            # Retrieves the value of the current key and removes whitespaces
+            value = row.get(key).strip()
+
+            # Reg ex for capital letters and URIs
+            capital_letter_regex = re.compile(r'^[A-ZÉ]')
+            http_regex = re.compile(r'\bhttps?://\S+')
+            uncinate_regex = re.compile(r'^«[^»]*»')
+
+            # Add a triple that associates the first column's value in the row with the type of entity
+            g.add((URIRef(ficto+"Praxis/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Praxis))
+
+            # Skip the first key
+            if key != list (row.keys())[0]:
+
+                # Check if the value is empy
+                if value:
+
+                    # Subject
+                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+
+                    # Split the predicate in prefix and suffix
+                    column_split = str(key).split(":")
+                    prefix = column_split[0]
+                    suffix = column_split[1]
+
+                    namespaces = {"ficto":"https://example.org/ficto/",
+                    "lrmoo":"http://iflastandards.info/ns/lrm/lrmoo/",
+                    "frbroo":"http://iflastandards.info/ns/fr/frbr/frbroo/",
+                    "rdau":"http://rdaregistry.info/Elements/u/",
+                    "rdfs":"http://www.w3.org/TR/rdf11-schema/",
+                    "crm":"http://www.cidoc-crm.org/cidoc-crm/",
+                    "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "prov":"http://www.w3.org/ns/prov#",
+                    "owl" : "http://www.w3.org/TR/owl-ref/",
+                    "rdfs" : "http://www.w3.org/TR/rdf11-schema/",
+                    "dul" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "cito" : "http://purl.org/spar/cito/",
+                    "skos" : "http://www.w3.org/2004/02/skos/core#"}
+
+                    # Check if the prefix is in the Dict and create the predicate URI
+                    predicate = ''
+                    if prefix in namespaces:
+                        base_uri = namespaces[prefix]
+                        predicate = URIRef(base_uri+suffix)
+                        if prefix == "owl":
+                            predicate = OWL.sameAs
+                        if prefix == "rdfs":
+                            predicate = RDFS.label
+
+                    # Determine the object
+                    obj = ''
+                    # String=value with capital letters
+                    if capital_letter_regex.match(value) or uncinate_regex.match(value):
+                        obj = Literal(value, datatype=XSD.string)
+                    # String URI=value is a URI
+                    elif http_regex.match(value):
+                        obj = Literal(value, datatype=XSD.anyURI)
+                    # concept di skos:related
+                    elif key=="skos:related":
+                        obj = URIRef(ficto+"Concept/"+str(value))
+                    # Otherwise, value=URI
+                    else:
+                        obj = URIRef(ficto+str(value))
+
+                    g.add((subj, predicate, obj))
+
+# MODALITY
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Modality.csv", mode="r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Iteration through each row
+    for row in csv_reader:
+        #Iterate through each key of the row
+        for key in row.keys():
+            # Retrieves the value of the current key and removes whitespaces
+            value = row.get(key).strip()
+
+            # Reg ex for capital letters and URIs
+            capital_letter_regex = re.compile(r'^[A-ZÉ]')
+            http_regex = re.compile(r'\bhttps?://\S+')
+            uncinate_regex = re.compile(r'^«[^»]*»')
+
+            # Add a triple that associates the first column's value in the row with the type of entity
+            g.add((URIRef(ficto+"Modality/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Modalityy))
+
+            # Skip the first key
+            if key != list (row.keys())[0]:
+
+                # Check if the value is empy
+                if value:
+
+                    # Subject
+                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+
+                    # Split the predicate in prefix and suffix
+                    column_split = str(key).split(":")
+                    prefix = column_split[0]
+                    suffix = column_split[1]
+
+                    namespaces = {"ficto":"https://example.org/ficto/",
+                    "lrmoo":"http://iflastandards.info/ns/lrm/lrmoo/",
+                    "frbroo":"http://iflastandards.info/ns/fr/frbr/frbroo/",
+                    "rdau":"http://rdaregistry.info/Elements/u/",
+                    "rdfs":"http://www.w3.org/TR/rdf11-schema/",
+                    "crm":"http://www.cidoc-crm.org/cidoc-crm/",
+                    "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "prov":"http://www.w3.org/ns/prov#",
+                    "owl" : "http://www.w3.org/TR/owl-ref/",
+                    "rdfs" : "http://www.w3.org/TR/rdf11-schema/",
+                    "dul" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "cito" : "http://purl.org/spar/cito/",
+                    "skos" : "http://www.w3.org/2004/02/skos/core#"}
+
+                    # Check if the prefix is in the Dict and create the predicate URI
+                    predicate = ''
+                    if prefix in namespaces:
+                        base_uri = namespaces[prefix]
+                        predicate = URIRef(base_uri+suffix)
+                        if prefix == "owl":
+                            predicate = OWL.sameAs
+                        if prefix == "rdfs":
+                            predicate = RDFS.label
+
+                    # Determine the object
+                    obj = ''
+                    # String=value with capital letters
+                    if capital_letter_regex.match(value) or uncinate_regex.match(value):
+                        obj = Literal(value, datatype=XSD.string)
+                    # String URI=value is a URI
+                    elif http_regex.match(value):
+                        obj = Literal(value, datatype=XSD.anyURI)
+                    # concept di skos:related
+                    elif key=="skos:related":
+                        obj = URIRef(ficto+"Concept/"+str(value))
+                    # Otherwise, value=URI
+                    else:
+                        obj = URIRef(ficto+str(value))
+
+                    g.add((subj, predicate, obj))
+
+# Axiology
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Axiology.csv", mode="r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Iteration through each row
+    for row in csv_reader:
+        #Iterate through each key of the row
+        for key in row.keys():
+            # Retrieves the value of the current key and removes whitespaces
+            value = row.get(key).strip()
+
+            # Reg ex for capital letters and URIs
+            capital_letter_regex = re.compile(r'^[A-ZÉ]')
+            http_regex = re.compile(r'\bhttps?://\S+')
+            uncinate_regex = re.compile(r'^«[^»]*»')
+
+            # Add a triple that associates the first column's value in the row with the type of entity
+            g.add((URIRef(ficto+"Axiology/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Axiology))
+
+            # Skip the first key
+            if key != list (row.keys())[0]:
+
+                # Check if the value is empy
+                if value:
+
+                    # Subject
+                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+
+                    # Split the predicate in prefix and suffix
+                    column_split = str(key).split(":")
+                    prefix = column_split[0]
+                    suffix = column_split[1]
+
+                    namespaces = {"ficto":"https://example.org/ficto/",
+                    "lrmoo":"http://iflastandards.info/ns/lrm/lrmoo/",
+                    "frbroo":"http://iflastandards.info/ns/fr/frbr/frbroo/",
+                    "rdau":"http://rdaregistry.info/Elements/u/",
+                    "rdfs":"http://www.w3.org/TR/rdf11-schema/",
+                    "crm":"http://www.cidoc-crm.org/cidoc-crm/",
+                    "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "prov":"http://www.w3.org/ns/prov#",
+                    "owl" : "http://www.w3.org/TR/owl-ref/",
+                    "rdfs" : "http://www.w3.org/TR/rdf11-schema/",
+                    "dul" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "cito" : "http://purl.org/spar/cito/",
+                    "skos" : "http://www.w3.org/2004/02/skos/core#"}
+
+                    # Check if the prefix is in the Dict and create the predicate URI
+                    predicate = ''
+                    if prefix in namespaces:
+                        base_uri = namespaces[prefix]
+                        predicate = URIRef(base_uri+suffix)
+                        if prefix == "owl":
+                            predicate = OWL.sameAs
+                        if prefix == "rdfs":
+                            predicate = RDFS.label
+
+                    # Determine the object
+                    obj = ''
+                    # String=value with capital letters
+                    if capital_letter_regex.match(value) or uncinate_regex.match(value):
+                        obj = Literal(value, datatype=XSD.string)
+                    # String URI=value is a URI
+                    elif http_regex.match(value):
+                        obj = Literal(value, datatype=XSD.anyURI)
+                    # concept di skos:related
+                    elif key=="skos:related":
+                        obj = URIRef(ficto+"Concept/"+str(value))
+                    # Otherwise, value=URI
+                    else:
+                        obj = URIRef(ficto+str(value))
+
+                    g.add((subj, predicate, obj))
+
+# Symbols
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Symbols.csv", mode="r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Iteration through each row
+    for row in csv_reader:
+        #Iterate through each key of the row
+        for key in row.keys():
+            # Retrieves the value of the current key and removes whitespaces
+            value = row.get(key).strip()
+
+            # Reg ex for capital letters and URIs
+            capital_letter_regex = re.compile(r'^[A-ZÉ]')
+            http_regex = re.compile(r'\bhttps?://\S+')
+            uncinate_regex = re.compile(r'^«[^»]*»')
+
+            # Add a triple that associates the first column's value in the row with the type of entity
+            g.add((URIRef(ficto+"Symbols/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Symbols))
+
+            # Skip the first key
+            if key != list (row.keys())[0]:
+
+                # Check if the value is empy
+                if value:
+
+                    # Subject
+                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+
+                    # Split the predicate in prefix and suffix
+                    column_split = str(key).split(":")
+                    prefix = column_split[0]
+                    suffix = column_split[1]
+
+                    namespaces = {"ficto":"https://example.org/ficto/",
+                    "lrmoo":"http://iflastandards.info/ns/lrm/lrmoo/",
+                    "frbroo":"http://iflastandards.info/ns/fr/frbr/frbroo/",
+                    "rdau":"http://rdaregistry.info/Elements/u/",
+                    "rdfs":"http://www.w3.org/TR/rdf11-schema/",
+                    "crm":"http://www.cidoc-crm.org/cidoc-crm/",
+                    "dul":"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "prov":"http://www.w3.org/ns/prov#",
+                    "owl" : "http://www.w3.org/TR/owl-ref/",
+                    "rdfs" : "http://www.w3.org/TR/rdf11-schema/",
+                    "dul" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#",
+                    "cito" : "http://purl.org/spar/cito/",
+                    "skos" : "http://www.w3.org/2004/02/skos/core#"}
+
+                    # Check if the prefix is in the Dict and create the predicate URI
+                    predicate = ''
+                    if prefix in namespaces:
+                        base_uri = namespaces[prefix]
+                        predicate = URIRef(base_uri+suffix)
+                        if prefix == "owl":
+                            predicate = OWL.sameAs
+                        if prefix == "rdfs":
+                            predicate = RDFS.label
+
+                    # Determine the object
+                    obj = ''
+                    # String=value with capital letters
+                    if capital_letter_regex.match(value) or uncinate_regex.match(value):
+                        obj = Literal(value, datatype=XSD.string)
+                    # String URI=value is a URI
+                    elif http_regex.match(value):
+                        obj = Literal(value, datatype=XSD.anyURI)
+                    # concept di skos:related
+                    elif key=="skos:related":
+                        obj = URIRef(ficto+"Concept/"+str(value))
+                    # Otherwise, value=URI
+                    else:
+                        obj = URIRef(ficto+str(value))
+
+                    g.add((subj, predicate, obj))
+
 
 
 
