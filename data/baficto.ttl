@@ -11,25 +11,131 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://example.org/ficto/Agent/caterina_ciccotti> a crm:E39 ;
-    rdfs:label "Caterina Ciccotti"^^xsd:string ;
-    owl:sameAs "http://id.sbn.it/bid/UBOV366459"^^xsd:anyURI .
-
-<https://example.org/ficto/Agent/giancarlo_carlotti> a crm:E39 ;
-    rdfs:label "Giancarlo Carlotti"^^xsd:string ;
-    owl:sameAs "http://viaf.org/viaf/71171353"^^xsd:anyURI .
-
 <https://example.org/ficto/Agent/joseph_bell> a crm:E39 ;
     rdfs:label "Joseph Bell"^^xsd:string ;
     owl:sameAs "https://viaf.org/en/viaf/65206842"^^xsd:anyURI .
 
-<https://example.org/ficto/Agent/maria_gallone> a crm:E39 ;
-    rdfs:label "Maria Gallone"^^xsd:string ;
-    owl:sameAs "http://viaf.org/viaf/2984147967353184200003"^^xsd:anyURI .
-
 <https://example.org/ficto/Agent/napoleon> a crm:E39 ;
     rdfs:label "Napoleone Bonaparte"^^xsd:string ;
     owl:sameAs "https://viaf.org/en/viaf/106964661"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_1> a ficto:AnagraphicalStatus ;
+    rdfs:label "Altezza"^^xsd:string,
+        "Uomo alto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_10> a ficto:AnagraphicalStatus ;
+    rdfs:label "Viso sciupato"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_2> a ficto:AnagraphicalStatus ;
+    rdfs:label "Peso"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_3> a ficto:AnagraphicalStatus ;
+    rdfs:label "Sguardo acuto e penetrante"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_4> a ficto:AnagraphicalStatus ;
+    rdfs:label "Naso affilato e aquilino"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_5> a ficto:AnagraphicalStatus ;
+    rdfs:label "Mento pronunciato e quadrato"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_6> a ficto:AnagraphicalStatus ;
+    rdfs:label "Mani chiazzate"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_7> a ficto:AnagraphicalStatus ;
+    rdfs:label "Occhi grigi"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_8> a ficto:AnagraphicalStatus ;
+    rdfs:label "Sagoma atletica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/feature_9> a ficto:AnagraphicalStatus ;
+    rdfs:label "Viso pallido"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/physical_feature> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/full_name_1> a ficto:AnagraphicalStatus ;
+    rdfs:label "Sherlock Holmes"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/full_name> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedto ficto:detective_fiction .
+
+<https://example.org/ficto/AnagraphicalStatus/occupation_1> a ficto:AnagraphicalStatus ;
+    rdfs:label "Non ha studiato medicina"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/occupation> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/occupation_2> a ficto:AnagraphicalStatus ;
+    rdfs:label "Non ha frequentato corsi universitari"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/occupation> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/occupation_3> a ficto:AnagraphicalStatus ;
+    rdfs:label "Ufficio"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/occupation> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/occupation_4> a ficto:AnagraphicalStatus ;
+    rdfs:label "Consulente delle indagini"^^xsd:string,
+        "Investigatore"^^xsd:string,
+        "Specialista del crimine"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/occupation> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedto ficto:detective_fiction .
+
+<https://example.org/ficto/AnagraphicalStatus/occupation_5> a ficto:AnagraphicalStatus ;
+    rdfs:label "Carriera straordinaria"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/occupation> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/AnagraphicalStatus/socioec_status_1> a ficto:AnagraphicalStatus ;
+    rdfs:label "Origine sociale elevata"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/social_status> ;
+    ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/Axiology/belief_1> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/belief_2> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/belief_3> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/exist_outlook_1> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/exist_outlook_2> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/exist_outlook_3> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/exist_outlook_4> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/exist_outlook_5> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/exist_outlook_6> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/principle_1> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/principle_2> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/world_inter_attitude_1> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/world_inter_attitude_2> a ficto:Axiology .
+
+<https://example.org/ficto/Axiology/world_inter_attitude_3> a ficto:Axiology .
 
 <https://example.org/ficto/Character/drebber_doyle1> a frbroo:F38 ;
     rdfs:label "Enoch J. Drebber"^^xsd:string ;
@@ -132,6 +238,804 @@
     rdfs:label "Dr Watson"^^xsd:string ;
     ficto:narrativeRole ficto:helper .
 
+<https://example.org/ficto/CharacterAndPsychology/aspiration_1> rdfs:label "Zelo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/aspiration> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_1> rdfs:label "Studi caotici ed estemporanei"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_10> rdfs:label "Natura autoritaria"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_11> rdfs:label "Non era nel suo carattere prendersi una vacanza inutile"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_12> rdfs:label "Coraggio"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_13> rdfs:label "Equanimità verso la morte"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_14> rdfs:label "Étonner la galerie"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_15> rdfs:label "Rabbuiarsi"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_16> rdfs:label "Silenzioso"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_2> rdfs:label "Pigrizia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_3> rdfs:label "Dinamismo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_4> rdfs:label "Aria noncurante"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_5> rdfs:label "Pienamente assorto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_6> rdfs:label "Espressione distaccata"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_7> rdfs:label "Espressione professionale"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_8> rdfs:label "Estraniarsi mentalmente"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/attitude_9> rdfs:label "Pignola cura da gatto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/behaviour_1> rdfs:label "Animale a sangue freddo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/behaviour> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/behaviour_2> rdfs:label "Nervi d'acciaio"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/behaviour> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/belief_1> rdfs:label "Scetticismo [verso il paranormale]"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/belief> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/belief_2> rdfs:label "Allarmismo verso il paranormale"^^xsd:string,
+        "Fantasmi"^^xsd:string,
+        "Soprannaturali timori"^^xsd:string,
+        "Spiritismo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/belief> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/belief_3> rdfs:label "Aldilà"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/belief> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_1> a ficto:CharacterAndPsychology ;
+    rdfs:label "Crisi di depressione"^^xsd:string,
+        "Période de dépression"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_10> a ficto:CharacterAndPsychology ;
+    rdfs:label "État de fébrilité"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_11> a ficto:CharacterAndPsychology ;
+    rdfs:label "Abbattement"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_12> a ficto:CharacterAndPsychology ;
+    rdfs:label "Seccato"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_13> a ficto:CharacterAndPsychology ;
+    rdfs:label "Pallido come un morto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_2> a ficto:CharacterAndPsychology ;
+    rdfs:label "Arrossire"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_3> a ficto:CharacterAndPsychology ;
+    rdfs:label "Tensione nevosa"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_4> a ficto:CharacterAndPsychology ;
+    rdfs:label "Massima tranquillità"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_5> a ficto:CharacterAndPsychology ;
+    rdfs:label "Périodes d’ennui"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_6> a ficto:CharacterAndPsychology ;
+    rdfs:label "Hébétude apparente"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_7> a ficto:CharacterAndPsychology ;
+    rdfs:label "Prostration physique"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_8> a ficto:CharacterAndPsychology ;
+    rdfs:label "Prostration mentale"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/emo_state_9> a ficto:CharacterAndPsychology ;
+    rdfs:label "Ému"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/emotional_state> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exist_outlook_1> rdfs:label "Evitare dati inutili per quelli utili"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/existential_outlook> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/exist_outlook_2> rdfs:label "Metodo analitico"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/existential_outlook> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/exist_outlook_3> rdfs:label "Concezione dell'anima"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/existential_outlook> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exist_outlook_4> rdfs:label "Osservazione sul mondo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/existential_outlook> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/exist_outlook_5> rdfs:label "Vita ben spesa"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/existential_outlook> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exist_outlook_6> rdfs:label "Réflexion sur les crimes ordinaires"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/existential_outlook> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_1> rdfs:label "Esclamazione soddisfatta"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_10> rdfs:label "Interessante, per quanto elementare"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_11> rdfs:label "Voce fredda"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_12> rdfs:label "Voce incisiva"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_13> rdfs:label "Voce ironica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_14> rdfs:label "Elémentaire, mon cher Watson"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_15> rdfs:label "«Vide?» fit Holmes, «voilà qui est intéressant»"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_16> rdfs:label "Voix impérieuse"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_17> rdfs:label "Elementare, mio caro Dupin"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_2> rdfs:label "Grassa risata"^^xsd:string,
+        "Scoppiare a ridere"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_3> rdfs:label "Per quanto semplice, aveva parecchi punti assai istruttivi"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_4> rdfs:label "Monologare sottovoce"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_5> rdfs:label "Fila di esclamazioni"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_6> rdfs:label "Grugniti"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_7> rdfs:label "Fischi"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_8> rdfs:label "Gridolini di giubilo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/exp_habit_9> rdfs:label "Gridolini di incoraggiamento"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expression_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_1> rdfs:label "Capacità di percezione"^^xsd:string,
+        "Istinto di indagatore"^^xsd:string,
+        "Scoprire le cose [perspicacia]"^^xsd:string,
+        "Talent de détection"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_2> rdfs:label "Capacità di osservazione"^^xsd:string,
+        "Lire sur l'aspect extérieur des gens"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_3> rdfs:label "Capacità di deduzione"^^xsd:string,
+        "Capacité déductive"^^xsd:string,
+        "Deduce facilmente dall'espressione"^^xsd:string,
+        "Déduire les pensées des autres"^^xsd:string,
+        "Facilités de déduction"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_4> rdfs:label "Deduzione astratta"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_5> rdfs:label "Mente rigorosamente pratica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_6> rdfs:label "Prudenza professionale"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_7> rdfs:label "Rapidità d'intelletto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/expertise_9> rdfs:label "Noter le plus infime détail"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/expertise> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_1> rdfs:label "Fumare la pipa"^^xsd:string,
+        "Fumée du tabac"^^xsd:string,
+        "Tabac"^^xsd:string,
+        "Tabacco forte"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_10> rdfs:label "Fumare sigarette"^^xsd:string,
+        "Fumo di sigaretta"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_11> rdfs:label "Raggomitolato in poltrona"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_12> rdfs:label "Flacon de cocaïne"^^xsd:string,
+        "Funeste abitude [à la cocaïne]"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_2> rdfs:label "Esperimenti chimici"^^xsd:string,
+        "Fare piccoli esperimenti"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_3> rdfs:label "Abitudini regolari"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_4> rdfs:label "Sembra fare uso di droghe"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_5> rdfs:label "Vita sana e morigerata"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_6> rdfs:label "Strimpellare il violino"^^xsd:string,
+        "Suonare il violino"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_7> rdfs:label "Accasciarsi in poltrona"^^xsd:string,
+        "Affalé dans son fauteuil"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_8> rdfs:label "Svegliarsi tardi"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/habit_9> rdfs:label "Stare in piedi tutta la notte"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/inter_1> rdfs:label "Fanatico della scienza"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/interest> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/inter_2> rdfs:label "Passato e presente"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/interest> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/kin_abit_5> rdfs:label "Congiungere i polpastrelli delle dita"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/kin_habit_1> rdfs:label "Sbuffare"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/kin_habit_2> rdfs:label "Sorridere"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/kin_habit_3> rdfs:label "Dita agili"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/kin_habit_4> rdfs:label "Occhi che mandavano lampi"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/kin_habit_6> rdfs:label "Battere un pugno sul tavolo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_1> rdfs:label "Anatomia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_10> rdfs:label "Botanica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_11> rdfs:label "Geologia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_12> rdfs:label "Chimica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_13> rdfs:label "Diritto britannico"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_14> rdfs:label "Educazione eccellente"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_15> rdfs:label "Ambiente criminoso di Londra"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_2> rdfs:label "Conoscenza di criminologia"^^xsd:string,
+        "Cronaca nera"^^xsd:string,
+        "Enciclopedia vivente del crimine"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_3> rdfs:label "Cultura vasta e dettagliata"^^xsd:string,
+        "Sapere notevole [in certi altri campi]"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_4> rdfs:label "Ignoranza notevole [in certi campi]"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_5> rdfs:label "La natura del gioco letterario"^^xsd:string,
+        "Letteratura"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_6> rdfs:label "Filosofia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_7> rdfs:label "Politica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_8> rdfs:label "Eliocentrismo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/knowledge_9> rdfs:label "Astronomia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/knowledge> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_1> rdfs:label "Abbassare le palpebre"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_2> rdfs:label "Sguardo neutro"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_3> rdfs:label "Sguardo spento"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_4> rdfs:label "Sguardo assente"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_5> rdfs:label "A capo chino"^^xsd:string,
+        "Mento affondato nel petto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/kinetic_habit>,
+        <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_6> rdfs:label "Sopracciglia aggrottate"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_7> rdfs:label "Sguardo fisso"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_8> rdfs:label "Sguardo impietrito"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/mannerism_9> rdfs:label "Labbra spalancate"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/mannerism> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/need_1> rdfs:label "Rimanere solo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/need> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/need_2> rdfs:label "Pace"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/need> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/need_3> rdfs:label "Tranquillità"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/need> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/need_4> rdfs:label "Déplorer la disparition de James Moriarty"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/need> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_1> rdfs:label "Soprabito"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_10> rdfs:label "Singolare berretto"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_2> rdfs:label "Cappottone"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_3> rdfs:label "Sciarpa"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_4> rdfs:label "Veste da camera"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_5> rdfs:label "Completo di tweed"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_6> rdfs:label "Berretto di panno"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_7> rdfs:label "Pèlerine rouge"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    ficto:linkedTo ficto:fairy_tales .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_8> rdfs:label "Une petite jupe"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
+    ficto:linkedTo ficto:fairy_tales .
+
+<https://example.org/ficto/CharacterAndPsychology/pers_style_9> rdfs:label "Mantello a larghe pieghe"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/personal_style> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/principle_1> rdfs:label "Paladino del sapere esatto e scientifico"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/principle> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/principle_2> rdfs:label "Giustizia e integrità."^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/principle> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_1> a ficto:CharacterAndPsychology ;
+    rdfs:label "Stravaganza"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_10> a ficto:CharacterAndPsychology ;
+    rdfs:label "Padrone di sé"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_11> a ficto:CharacterAndPsychology ;
+    rdfs:label "Mente logica"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_12> a ficto:CharacterAndPsychology ;
+    rdfs:label "Mente razionale"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_14> a ficto:CharacterAndPsychology ;
+    rdfs:label "Non sono un individuo nervoso"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_15> a ficto:CharacterAndPsychology ;
+    rdfs:label "Mente matematica fenomenale"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_16> a ficto:CharacterAndPsychology ;
+    rdfs:label "Nervi a prova di bomba"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_17> a ficto:CharacterAndPsychology ;
+    rdfs:label "Apathie"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_18> a ficto:CharacterAndPsychology ;
+    rdfs:label "Impassible mécanique intellectuelle"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_19> a ficto:CharacterAndPsychology ;
+    rdfs:label "Suffisance"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_2> a ficto:CharacterAndPsychology ;
+    rdfs:label "Restio a comunicare i suoi piani"^^xsd:string,
+        "Reticenza"^^xsd:string,
+        "Riservato"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_20> a ficto:CharacterAndPsychology ;
+    rdfs:label "Fantomatico"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_21> a ficto:CharacterAndPsychology ;
+    rdfs:label "Lugubre"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_3> a ficto:CharacterAndPsychology ;
+    rdfs:label "Espansivo"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_4> a ficto:CharacterAndPsychology ;
+    rdfs:label "Crisi di iperattività"^^xsd:string,
+        "Iperattività"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_5> a ficto:CharacterAndPsychology ;
+    rdfs:label "Abulia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_6> a ficto:CharacterAndPsychology ;
+    rdfs:label "Languido sognatore"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_7> a ficto:CharacterAndPsychology ;
+    rdfs:label "Energico uomo d'azione"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_8> a ficto:CharacterAndPsychology ;
+    rdfs:label "Severo amico"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/psych_prof_9> a ficto:CharacterAndPsychology ;
+    rdfs:label "Controllato"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/psychological_profile> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/recur_p_obj_1> rdfs:label "Metro a nastro"^^xsd:string,
+        "Mètre pliant"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/recurring_personal_object> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedto ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/recur_p_obj_2> rdfs:label "Grossa lente"^^xsd:string,
+        "Lente"^^xsd:string,
+        "Lente d'ingrandimento"^^xsd:string,
+        "Loupe"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/recurring_personal_object> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedto ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/recur_p_obj_3> rdfs:label "Courte bouffarde"^^xsd:string,
+        "Pipa di terracotta nera"^^xsd:string,
+        "Pipe du matin"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/recurring_personal_object> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/recur_p_obj_4> rdfs:label "Portasigarette d'argento"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/recurring_personal_object> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/recur_p_obj_5> rdfs:label "Babouche persane"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/recurring_personal_object> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/self_perception_1> a ficto:CharacterAndPsychology ;
+    rdfs:label "Arroganza"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/self_perception> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/self_perception_2> a ficto:CharacterAndPsychology ;
+    rdfs:label "Sensibile sulle sue doti"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/self_perception> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/self_perception_3> a ficto:CharacterAndPsychology ;
+    rdfs:label "Fama di detective"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/self_perception> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/self_perception_4> a ficto:CharacterAndPsychology ;
+    rdfs:label "Investigatore coscienzioso"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/self_perception> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/self_perception_5> a ficto:CharacterAndPsychology ;
+    rdfs:label "Abilità ingannatorie"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/self_perception> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/self_perception_6> a ficto:CharacterAndPsychology ;
+    rdfs:label "Mieux voir que le commun des mortels"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/self_perception> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/skill_1> rdfs:label "Chimico provetto"^^xsd:string,
+        "Son Stradivarius"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/skill> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/skill_2> rdfs:label "Suonare il violino"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/skill> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/skill_3> rdfs:label "Combattimento"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/skill> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/skill_4> rdfs:label "Doti singolari"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/skill> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/skill_5> rdfs:label "Calligrafia chiara"^^xsd:string,
+        "Calligrafia ferma"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/skill> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_1> rdfs:label "Bracco di razza"^^xsd:string,
+        "Chien de chasse"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_2> rdfs:label "Segugio"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_3> rdfs:label "Allodola"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_4> rdfs:label "Cane da caccia"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_5> rdfs:label "Generale"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_6> rdfs:label "Diable d'homme"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_7> rdfs:label "Allures de félin"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/symb_imag_8> rdfs:label "Esperto di cani fluorescenti"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
+
+<https://example.org/ficto/CharacterAndPsychology/world_inter_attitude_1> rdfs:label "Pericolo quale parte del mestiere"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/worldview_interpersonal_attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/world_inter_attitude_2> rdfs:label "Penetrare nei misteri della natura"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/worldview_interpersonal_attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
+    ficto:linkedTo ficto:detective_fiction .
+
+<https://example.org/ficto/CharacterAndPsychology/world_inter_attitude_3> rdfs:label "Napoleone del crimine"^^xsd:string ;
+    skos:related <https://example.org/ficto/Concept/worldview_interpersonal_attitude> ;
+    ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI .
+
 <https://example.org/ficto/CollectiveAgent/f&l> a lrmoo:F55 ;
     rdfs:label "Fruttero & Lucentini"^^xsd:string ;
     owl:sameAs "https://www.wikidata.org/wiki/Q1471043"^^xsd:anyURI .
@@ -144,113 +1048,13 @@
     rdfs:label "OuLiPoPo (LIttérature POlicière)"^^xsd:string ;
     owl:sameAs "http://viaf.org/viaf/150855006"^^xsd:anyURI .
 
-<https://example.org/ficto/Concept/aspiration> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q55919789"^^xsd:anyURI ;
-    skos:prefLabel "Aspiration"^^xsd:string .
-
-<https://example.org/ficto/Concept/attitude> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q622645"^^xsd:anyURI ;
-    skos:prefLabel "Attitude"^^xsd:string .
-
-<https://example.org/ficto/Concept/belief> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q34394"^^xsd:anyURI ;
-    skos:prefLabel "Belief"^^xsd:string .
-
-<https://example.org/ficto/Concept/emotional_state> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q4531715"^^xsd:anyURI ;
-    skos:prefLabel "Emotional state"^^xsd:string .
-
-<https://example.org/ficto/Concept/existential_outlook> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q468777"^^xsd:anyURI ;
-    skos:prefLabel "Existential outlook"^^xsd:string .
-
-<https://example.org/ficto/Concept/expertise> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q644238"^^xsd:anyURI ;
-    skos:prefLabel "Expertise"^^xsd:string .
-
-<https://example.org/ficto/Concept/expression_habit> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q1136816"^^xsd:anyURI ;
-    skos:prefLabel "Expression habit"^^xsd:string .
-
-<https://example.org/ficto/Concept/full_name> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q1071027"^^xsd:anyURI ;
-    skos:prefLabel "Name"^^xsd:string .
-
-<https://example.org/ficto/Concept/habit> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q1136816"^^xsd:anyURI ;
-    skos:prefLabel "Habit"^^xsd:string .
-
-<https://example.org/ficto/Concept/interest> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q366791"^^xsd:anyURI ;
-    skos:prefLabel "Interest"^^xsd:string .
-
-<https://example.org/ficto/Concept/kinetic_habit> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q1136816"^^xsd:anyURI ;
-    skos:prefLabel "Kinetic habit"^^xsd:string .
-
-<https://example.org/ficto/Concept/knowledge> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q9081"^^xsd:anyURI ;
-    skos:prefLabel "Knowledge"^^xsd:string .
-
-<https://example.org/ficto/Concept/mannerism> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q1890336"^^xsd:anyURI ;
-    skos:prefLabel "Mannerism"^^xsd:string .
-
-<https://example.org/ficto/Concept/need> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q190258"^^xsd:anyURI ;
-    skos:prefLabel "Need"^^xsd:string .
-
-<https://example.org/ficto/Concept/occupation> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q12737077"^^xsd:anyURI ;
-    skos:prefLabel "Occupation"^^xsd:string .
-
-<https://example.org/ficto/Concept/personal_style> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q11460"^^xsd:anyURI ;
-    skos:prefLabel "Personal style"^^xsd:string .
-
-<https://example.org/ficto/Concept/physical_feature> a skos:Concept ;
-    skos:closeMatch "http://vocab.getty.edu/page/aat/300435452"^^xsd:anyURI ;
-    skos:prefLabel "Physical feature"^^xsd:string .
-
-<https://example.org/ficto/Concept/principle> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q48324"^^xsd:anyURI ;
-    skos:prefLabel "Principle"^^xsd:string .
-
-<https://example.org/ficto/Concept/psychological_profile> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q3491351"^^xsd:anyURI ;
-    skos:prefLabel "Psychological profile"^^xsd:string .
-
-<https://example.org/ficto/Concept/recurring_personal_object> a skos:Concept ;
-    skos:closeMatch "https://www.wikidata.org/wiki/Q111547449"^^xsd:anyURI ;
-    skos:prefLabel "Recurring personal object"^^xsd:string .
-
-<https://example.org/ficto/Concept/self_perception> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q1860557"^^xsd:anyURI ;
-    skos:prefLabel "Self perception"^^xsd:string .
-
-<https://example.org/ficto/Concept/skill> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q12379081"^^xsd:anyURI ;
-    skos:prefLabel "Skill"^^xsd:string .
-
-<https://example.org/ficto/Concept/social_status> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q189970"^^xsd:anyURI ;
-    skos:prefLabel "Social status"^^xsd:string .
-
-<https://example.org/ficto/Concept/symbolic_imagery> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q80071"^^xsd:anyURI ;
-    skos:prefLabel "Symbolic imagery"^^xsd:string .
-
-<https://example.org/ficto/Concept/worldview_interpersonal_attitude> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q49447"^^xsd:anyURI ;
-    skos:prefLabel "Worldview and interpersonal attitude"^^xsd:string .
-
 <https://example.org/ficto/ExpressionCreation/le_loup_chantant_exprcr> a lrmoo:F28 ;
     rdfs:label "Le loup chantant de Forrest Gate"^^xsd:string ;
     lrmoo:R17 <https://example.org/ficto/Expression/le_loup_chantant_expr> ;
     rdau:P60447 <https://example.org/ficto/Agent/oulipopo> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
     crm:P4 "1974"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Diegesis/diegesis_3> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_3> .
 
 <https://example.org/ficto/ExpressionCreation/mastino_baskerville_exprcr> a lrmoo:F28 ;
     rdfs:label "Il mastino dei Baskerville"^^xsd:string ;
@@ -258,7 +1062,7 @@
     rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
     crm:P4 "2015"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Diegesis/diegesis_5> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_5> .
 
 <https://example.org/ficto/ExpressionCreation/problema_finale_exprcr> a lrmoo:F28 ;
     rdfs:label "Il problema finale"^^xsd:string ;
@@ -266,7 +1070,7 @@
     rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
     crm:P4 "2018"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Diegesis/diegesis_2> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_2> .
 
 <https://example.org/ficto/ExpressionCreation/studio_rosso_exprcr> a lrmoo:F28 ;
     rdfs:label "Uno studio in rosso"^^xsd:string ;
@@ -274,188 +1078,93 @@
     rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
     crm:P4 "2015"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Diegesis/diegesis_1> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_1> .
 
 <https://example.org/ficto/ExpressionCreation/verità_d_exprcr> a lrmoo:F28 ;
     rdfs:label "La verità sul caso D."^^xsd:string ;
-    lrmoo:R17 <https://example.org/ficto/Expression/verità_D_expr> ;
+    lrmoo:R17 <https://example.org/ficto/Expression/verità_d_expr> ;
     rdau:P60447 <https://example.org/ficto/Agent/f&l> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300049945"^^xsd:anyURI ;
     crm:P4 "1989"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Diegesis/diegesis_4> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_4> .
 
 <https://example.org/ficto/Genre/detective_fiction> a ficto:LiteraryGenre ;
     rdfs:label "Detective fiction"^^xsd:string ;
     owl:sameAs "http://vocab.getty.edu/page/aat/300252918"^^xsd:anyURI .
 
-<https://example.org/ficto/Narrative/narrative_1> a dul:Narrative ;
-    crm:P46 ficto:narr_seg_expr1.1,
-        ficto:narr_seg_expr1.10,
-        ficto:narr_seg_expr1.11,
-        ficto:narr_seg_expr1.12,
-        ficto:narr_seg_expr1.13,
-        ficto:narr_seg_expr1.14,
-        ficto:narr_seg_expr1.15,
-        ficto:narr_seg_expr1.16,
-        ficto:narr_seg_expr1.17,
-        ficto:narr_seg_expr1.18,
-        ficto:narr_seg_expr1.19,
-        ficto:narr_seg_expr1.2,
-        ficto:narr_seg_expr1.20,
-        ficto:narr_seg_expr1.21,
-        ficto:narr_seg_expr1.22,
-        ficto:narr_seg_expr1.23,
-        ficto:narr_seg_expr1.24,
-        ficto:narr_seg_expr1.25,
-        ficto:narr_seg_expr1.26,
-        ficto:narr_seg_expr1.27,
-        ficto:narr_seg_expr1.28,
-        ficto:narr_seg_expr1.29,
-        ficto:narr_seg_expr1.3,
-        ficto:narr_seg_expr1.30,
-        ficto:narr_seg_expr1.31,
-        ficto:narr_seg_expr1.32,
-        ficto:narr_seg_expr1.33,
-        ficto:narr_seg_expr1.34,
-        ficto:narr_seg_expr1.35,
-        ficto:narr_seg_expr1.36,
-        ficto:narr_seg_expr1.37,
-        ficto:narr_seg_expr1.38,
-        ficto:narr_seg_expr1.39,
-        ficto:narr_seg_expr1.4,
-        ficto:narr_seg_expr1.40,
-        ficto:narr_seg_expr1.41,
-        ficto:narr_seg_expr1.42,
-        ficto:narr_seg_expr1.43,
-        ficto:narr_seg_expr1.44,
-        ficto:narr_seg_expr1.45,
-        ficto:narr_seg_expr1.46,
-        ficto:narr_seg_expr1.47,
-        ficto:narr_seg_expr1.48,
-        ficto:narr_seg_expr1.49,
-        ficto:narr_seg_expr1.5,
-        ficto:narr_seg_expr1.50,
-        ficto:narr_seg_expr1.51,
-        ficto:narr_seg_expr1.52,
-        ficto:narr_seg_expr1.53,
-        ficto:narr_seg_expr1.54,
-        ficto:narr_seg_expr1.55,
-        ficto:narr_seg_expr1.56,
-        ficto:narr_seg_expr1.57,
-        ficto:narr_seg_expr1.58,
-        ficto:narr_seg_expr1.6,
-        ficto:narr_seg_expr1.7,
-        ficto:narr_seg_expr1.8,
-        ficto:narr_seg_expr1.9 .
+<https://example.org/ficto/Genre/fairy_tales> a ficto:LiteraryGenre ;
+    rdfs:label "Fairy tales"^^xsd:string ;
+    owl:sameAs "http://vocab.getty.edu/page/aat/300185684"^^xsd:anyURI .
 
-<https://example.org/ficto/Narrative/narrative_2> a dul:Narrative ;
-    crm:P46 ficto:narr_seg_expr_2.1,
-        ficto:narr_seg_expr_2.10,
-        ficto:narr_seg_expr_2.11,
-        ficto:narr_seg_expr_2.12,
-        ficto:narr_seg_expr_2.13,
-        ficto:narr_seg_expr_2.14,
-        ficto:narr_seg_expr_2.15,
-        ficto:narr_seg_expr_2.16,
-        ficto:narr_seg_expr_2.17,
-        ficto:narr_seg_expr_2.18,
-        ficto:narr_seg_expr_2.19,
-        ficto:narr_seg_expr_2.2,
-        ficto:narr_seg_expr_2.20,
-        ficto:narr_seg_expr_2.21,
-        ficto:narr_seg_expr_2.22,
-        ficto:narr_seg_expr_2.23,
-        ficto:narr_seg_expr_2.24,
-        ficto:narr_seg_expr_2.25,
-        ficto:narr_seg_expr_2.26,
-        ficto:narr_seg_expr_2.27,
-        ficto:narr_seg_expr_2.28,
-        ficto:narr_seg_expr_2.29,
-        ficto:narr_seg_expr_2.3,
-        ficto:narr_seg_expr_2.30,
-        ficto:narr_seg_expr_2.31,
-        ficto:narr_seg_expr_2.32,
-        ficto:narr_seg_expr_2.33,
-        ficto:narr_seg_expr_2.34,
-        ficto:narr_seg_expr_2.35,
-        ficto:narr_seg_expr_2.36,
-        ficto:narr_seg_expr_2.37,
-        ficto:narr_seg_expr_2.4,
-        ficto:narr_seg_expr_2.5,
-        ficto:narr_seg_expr_2.6,
-        ficto:narr_seg_expr_2.7,
-        ficto:narr_seg_expr_2.8,
-        ficto:narr_seg_expr_2.9 .
+<https://example.org/ficto/Modality/aspiration_1> a ficto:Modalityy .
 
-<https://example.org/ficto/Narrative/narrative_3> a dul:Narrative ;
-    crm:P46 ficto:narr_seg_expr_3.1,
-        ficto:narr_seg_expr_3.10,
-        ficto:narr_seg_expr_3.11,
-        ficto:narr_seg_expr_3.12,
-        ficto:narr_seg_expr_3.13,
-        ficto:narr_seg_expr_3.14,
-        ficto:narr_seg_expr_3.15,
-        ficto:narr_seg_expr_3.16,
-        ficto:narr_seg_expr_3.17,
-        ficto:narr_seg_expr_3.18,
-        ficto:narr_seg_expr_3.2,
-        ficto:narr_seg_expr_3.3,
-        ficto:narr_seg_expr_3.4,
-        ficto:narr_seg_expr_3.5,
-        ficto:narr_seg_expr_3.6,
-        ficto:narr_seg_expr_3.7,
-        ficto:narr_seg_expr_3.8,
-        ficto:narr_seg_expr_3.9 .
+<https://example.org/ficto/Modality/expertise_1> a ficto:Modalityy .
 
-<https://example.org/ficto/Narrative/narrative_4> a dul:Narrative ;
-    crm:P46 ficto:narr_seg_expr_4.1,
-        ficto:narr_seg_expr_4.10,
-        ficto:narr_seg_expr_4.11,
-        ficto:narr_seg_expr_4.12,
-        ficto:narr_seg_expr_4.13,
-        ficto:narr_seg_expr_4.14,
-        ficto:narr_seg_expr_4.15,
-        ficto:narr_seg_expr_4.16,
-        ficto:narr_seg_expr_4.17,
-        ficto:narr_seg_expr_4.18,
-        ficto:narr_seg_expr_4.19,
-        ficto:narr_seg_expr_4.2,
-        ficto:narr_seg_expr_4.20,
-        ficto:narr_seg_expr_4.21,
-        ficto:narr_seg_expr_4.22,
-        ficto:narr_seg_expr_4.23,
-        ficto:narr_seg_expr_4.24,
-        ficto:narr_seg_expr_4.25,
-        ficto:narr_seg_expr_4.26,
-        ficto:narr_seg_expr_4.27,
-        ficto:narr_seg_expr_4.28,
-        ficto:narr_seg_expr_4.29,
-        ficto:narr_seg_expr_4.3,
-        ficto:narr_seg_expr_4.30,
-        ficto:narr_seg_expr_4.4,
-        ficto:narr_seg_expr_4.5,
-        ficto:narr_seg_expr_4.6,
-        ficto:narr_seg_expr_4.7,
-        ficto:narr_seg_expr_4.8,
-        ficto:narr_seg_expr_4.9 .
+<https://example.org/ficto/Modality/expertise_2> a ficto:Modalityy .
 
-<https://example.org/ficto/Narrative/narrative_5> a dul:Narrative ;
-    crm:P46 ficto:narr_seg_expr_5.1,
-        ficto:narr_seg_expr_5.10,
-        ficto:narr_seg_expr_5.11,
-        ficto:narr_seg_expr_5.12,
-        ficto:narr_seg_expr_5.13,
-        ficto:narr_seg_expr_5.14,
-        ficto:narr_seg_expr_5.15,
-        ficto:narr_seg_expr_5.16,
-        ficto:narr_seg_expr_5.2,
-        ficto:narr_seg_expr_5.3,
-        ficto:narr_seg_expr_5.4,
-        ficto:narr_seg_expr_5.5,
-        ficto:narr_seg_expr_5.6,
-        ficto:narr_seg_expr_5.7,
-        ficto:narr_seg_expr_5.8,
-        ficto:narr_seg_expr_5.9 .
+<https://example.org/ficto/Modality/expertise_3> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/expertise_4> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/expertise_5> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/expertise_6> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/expertise_7> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/expertise_9> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/inter_1> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/inter_2> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_1> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_10> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_11> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_12> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_13> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_14> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_15> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_2> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_3> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_4> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_5> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_6> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_7> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_8> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/knowledge_9> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/need_1> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/need_2> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/need_3> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/need_4> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/skill_1> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/skill_2> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/skill_3> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/skill_4> a ficto:Modalityy .
+
+<https://example.org/ficto/Modality/skill_5> a ficto:Modalityy .
 
 <https://example.org/ficto/NarrativeSegment/narr_seg_expr1.1> a ficto:NarrativeSegment ;
     cito:cites ficto:full_name_1,
@@ -1711,8 +2420,178 @@
     ficto:hasNarrativePosition ficto:etero-diegetic ;
     ficto:hasPointOfView ficto:zero .
 
+<https://example.org/ficto/Praxis/attitude_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_10> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_11> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_12> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_13> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_14> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_15> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_16> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_3> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_4> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_5> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_6> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_7> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_8> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/attitude_9> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/behaviour_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/behaviour_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_10> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_11> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_12> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_13> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_14> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_15> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_16> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_17> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_3> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_4> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_5> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_6> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_7> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_8> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/exp_habit_9> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_10> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_11> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_12> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_3> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_4> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_5> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_6> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_7> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_8> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/habit_9> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/kin_abit_5> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/kin_habit_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/kin_habit_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/kin_habit_3> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/kin_habit_4> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/kin_habit_6> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_3> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_4> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_5> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_6> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_7> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_8> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/mannerism_9> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_1> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_10> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_2> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_3> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_4> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_5> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_6> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_7> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_8> a ficto:Praxis .
+
+<https://example.org/ficto/Praxis/pers_style_9> a ficto:Praxis .
+
+<https://example.org/ficto/Symbols/recur_p_obj_1> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/recur_p_obj_2> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/recur_p_obj_3> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/recur_p_obj_4> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/recur_p_obj_5> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_1> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_2> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_3> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_4> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_5> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_6> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_7> a ficto:Symbols .
+
+<https://example.org/ficto/Symbols/symb_imag_8> a ficto:Symbols .
+
 <https://example.org/ficto/WorkCreation/hound_baskervilles_workcr> a lrmoo:F27 ;
-    rdfs:label "«The Hound Of The Baskervilles»"^^xsd:string ;
+    rdfs:label "The Hound Of The Baskervilles"^^xsd:string ;
     lrmoo:R16 <https://example.org/ficto/Work/hound_baskervilles_work> ;
     rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
     rdau:P60527 "1887"^^xsd:gYear .
@@ -1741,9 +2620,198 @@
     rdau:P60447 <https://example.org/ficto/Agent/f&l> ;
     rdau:P60527 "1989"^^xsd:gYear .
 
-<https://example.org/ficto/Expression/verità_d_expr> a lrmoo:F2 ;
-    rdfs:label "La verità sul caso D."^^xsd:string ;
-    crm:P72 "ita"^^xsd:language .
+<https://example.org/ficto/Agent/caterina_ciccotti> a crm:E39 ;
+    rdfs:label "Caterina Ciccotti"^^xsd:string ;
+    owl:sameAs "http://id.sbn.it/bid/UBOV366459"^^xsd:anyURI .
+
+<https://example.org/ficto/Agent/giancarlo_carlotti> a crm:E39 ;
+    rdfs:label "Giancarlo Carlotti"^^xsd:string ;
+    owl:sameAs "http://viaf.org/viaf/71171353"^^xsd:anyURI .
+
+<https://example.org/ficto/Agent/maria_gallone> a crm:E39 ;
+    rdfs:label "Maria Gallone"^^xsd:string ;
+    owl:sameAs "http://viaf.org/viaf/2984147967353184200003"^^xsd:anyURI .
+
+<https://example.org/ficto/Concept/aspiration> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q55919789"^^xsd:anyURI ;
+    skos:prefLabel "Aspiration"^^xsd:string .
+
+<https://example.org/ficto/Concept/full_name> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1071027"^^xsd:anyURI ;
+    skos:prefLabel "Name"^^xsd:string .
+
+<https://example.org/ficto/Concept/social_status> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q189970"^^xsd:anyURI ;
+    skos:prefLabel "Social status"^^xsd:string .
+
+<https://example.org/ficto/Narrative/narrative_1> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr1.1,
+        ficto:narr_seg_expr1.10,
+        ficto:narr_seg_expr1.11,
+        ficto:narr_seg_expr1.12,
+        ficto:narr_seg_expr1.13,
+        ficto:narr_seg_expr1.14,
+        ficto:narr_seg_expr1.15,
+        ficto:narr_seg_expr1.16,
+        ficto:narr_seg_expr1.17,
+        ficto:narr_seg_expr1.18,
+        ficto:narr_seg_expr1.19,
+        ficto:narr_seg_expr1.2,
+        ficto:narr_seg_expr1.20,
+        ficto:narr_seg_expr1.21,
+        ficto:narr_seg_expr1.22,
+        ficto:narr_seg_expr1.23,
+        ficto:narr_seg_expr1.24,
+        ficto:narr_seg_expr1.25,
+        ficto:narr_seg_expr1.26,
+        ficto:narr_seg_expr1.27,
+        ficto:narr_seg_expr1.28,
+        ficto:narr_seg_expr1.29,
+        ficto:narr_seg_expr1.3,
+        ficto:narr_seg_expr1.30,
+        ficto:narr_seg_expr1.31,
+        ficto:narr_seg_expr1.32,
+        ficto:narr_seg_expr1.33,
+        ficto:narr_seg_expr1.34,
+        ficto:narr_seg_expr1.35,
+        ficto:narr_seg_expr1.36,
+        ficto:narr_seg_expr1.37,
+        ficto:narr_seg_expr1.38,
+        ficto:narr_seg_expr1.39,
+        ficto:narr_seg_expr1.4,
+        ficto:narr_seg_expr1.40,
+        ficto:narr_seg_expr1.41,
+        ficto:narr_seg_expr1.42,
+        ficto:narr_seg_expr1.43,
+        ficto:narr_seg_expr1.44,
+        ficto:narr_seg_expr1.45,
+        ficto:narr_seg_expr1.46,
+        ficto:narr_seg_expr1.47,
+        ficto:narr_seg_expr1.48,
+        ficto:narr_seg_expr1.49,
+        ficto:narr_seg_expr1.5,
+        ficto:narr_seg_expr1.50,
+        ficto:narr_seg_expr1.51,
+        ficto:narr_seg_expr1.52,
+        ficto:narr_seg_expr1.53,
+        ficto:narr_seg_expr1.54,
+        ficto:narr_seg_expr1.55,
+        ficto:narr_seg_expr1.56,
+        ficto:narr_seg_expr1.57,
+        ficto:narr_seg_expr1.58,
+        ficto:narr_seg_expr1.6,
+        ficto:narr_seg_expr1.7,
+        ficto:narr_seg_expr1.8,
+        ficto:narr_seg_expr1.9 .
+
+<https://example.org/ficto/Narrative/narrative_2> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_2.1,
+        ficto:narr_seg_expr_2.10,
+        ficto:narr_seg_expr_2.11,
+        ficto:narr_seg_expr_2.12,
+        ficto:narr_seg_expr_2.13,
+        ficto:narr_seg_expr_2.14,
+        ficto:narr_seg_expr_2.15,
+        ficto:narr_seg_expr_2.16,
+        ficto:narr_seg_expr_2.17,
+        ficto:narr_seg_expr_2.18,
+        ficto:narr_seg_expr_2.19,
+        ficto:narr_seg_expr_2.2,
+        ficto:narr_seg_expr_2.20,
+        ficto:narr_seg_expr_2.21,
+        ficto:narr_seg_expr_2.22,
+        ficto:narr_seg_expr_2.23,
+        ficto:narr_seg_expr_2.24,
+        ficto:narr_seg_expr_2.25,
+        ficto:narr_seg_expr_2.26,
+        ficto:narr_seg_expr_2.27,
+        ficto:narr_seg_expr_2.28,
+        ficto:narr_seg_expr_2.29,
+        ficto:narr_seg_expr_2.3,
+        ficto:narr_seg_expr_2.30,
+        ficto:narr_seg_expr_2.31,
+        ficto:narr_seg_expr_2.32,
+        ficto:narr_seg_expr_2.33,
+        ficto:narr_seg_expr_2.34,
+        ficto:narr_seg_expr_2.35,
+        ficto:narr_seg_expr_2.36,
+        ficto:narr_seg_expr_2.37,
+        ficto:narr_seg_expr_2.4,
+        ficto:narr_seg_expr_2.5,
+        ficto:narr_seg_expr_2.6,
+        ficto:narr_seg_expr_2.7,
+        ficto:narr_seg_expr_2.8,
+        ficto:narr_seg_expr_2.9 .
+
+<https://example.org/ficto/Narrative/narrative_3> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_3.1,
+        ficto:narr_seg_expr_3.10,
+        ficto:narr_seg_expr_3.11,
+        ficto:narr_seg_expr_3.12,
+        ficto:narr_seg_expr_3.13,
+        ficto:narr_seg_expr_3.14,
+        ficto:narr_seg_expr_3.15,
+        ficto:narr_seg_expr_3.16,
+        ficto:narr_seg_expr_3.17,
+        ficto:narr_seg_expr_3.18,
+        ficto:narr_seg_expr_3.2,
+        ficto:narr_seg_expr_3.3,
+        ficto:narr_seg_expr_3.4,
+        ficto:narr_seg_expr_3.5,
+        ficto:narr_seg_expr_3.6,
+        ficto:narr_seg_expr_3.7,
+        ficto:narr_seg_expr_3.8,
+        ficto:narr_seg_expr_3.9 .
+
+<https://example.org/ficto/Narrative/narrative_4> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_4.1,
+        ficto:narr_seg_expr_4.10,
+        ficto:narr_seg_expr_4.11,
+        ficto:narr_seg_expr_4.12,
+        ficto:narr_seg_expr_4.13,
+        ficto:narr_seg_expr_4.14,
+        ficto:narr_seg_expr_4.15,
+        ficto:narr_seg_expr_4.16,
+        ficto:narr_seg_expr_4.17,
+        ficto:narr_seg_expr_4.18,
+        ficto:narr_seg_expr_4.19,
+        ficto:narr_seg_expr_4.2,
+        ficto:narr_seg_expr_4.20,
+        ficto:narr_seg_expr_4.21,
+        ficto:narr_seg_expr_4.22,
+        ficto:narr_seg_expr_4.23,
+        ficto:narr_seg_expr_4.24,
+        ficto:narr_seg_expr_4.25,
+        ficto:narr_seg_expr_4.26,
+        ficto:narr_seg_expr_4.27,
+        ficto:narr_seg_expr_4.28,
+        ficto:narr_seg_expr_4.29,
+        ficto:narr_seg_expr_4.3,
+        ficto:narr_seg_expr_4.30,
+        ficto:narr_seg_expr_4.4,
+        ficto:narr_seg_expr_4.5,
+        ficto:narr_seg_expr_4.6,
+        ficto:narr_seg_expr_4.7,
+        ficto:narr_seg_expr_4.8,
+        ficto:narr_seg_expr_4.9 .
+
+<https://example.org/ficto/Narrative/narrative_5> a dul:Narrative ;
+    crm:P46 ficto:narr_seg_expr_5.1,
+        ficto:narr_seg_expr_5.10,
+        ficto:narr_seg_expr_5.11,
+        ficto:narr_seg_expr_5.12,
+        ficto:narr_seg_expr_5.13,
+        ficto:narr_seg_expr_5.14,
+        ficto:narr_seg_expr_5.15,
+        ficto:narr_seg_expr_5.16,
+        ficto:narr_seg_expr_5.2,
+        ficto:narr_seg_expr_5.3,
+        ficto:narr_seg_expr_5.4,
+        ficto:narr_seg_expr_5.5,
+        ficto:narr_seg_expr_5.6,
+        ficto:narr_seg_expr_5.7,
+        ficto:narr_seg_expr_5.8,
+        ficto:narr_seg_expr_5.9 .
 
 <https://example.org/ficto/Work/hound_baskervilles_work> a lrmoo:F1 ;
     rdfs:label "The Hound Of The Baskervilles"^^xsd:string ;
@@ -1765,23 +2833,118 @@
     rdfs:label "La verità sul caso D."^^xsd:string ;
     lrmoo:R3 <https://example.org/ficto/Expression/verità_d_expr> .
 
+<https://example.org/ficto/Concept/interest> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q366791"^^xsd:anyURI ;
+    skos:prefLabel "Interest"^^xsd:string .
+
+<https://example.org/ficto/Concept/principle> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q48324"^^xsd:anyURI ;
+    skos:prefLabel "Principle"^^xsd:string .
+
 <https://example.org/ficto/Expression/le_loup_chantant_expr> a lrmoo:F2 ;
     rdfs:label "Le loup chantant de Forrest Gate"^^xsd:string ;
     crm:P72 "fra"^^xsd:language .
 
 <https://example.org/ficto/Expression/mastino_baskerville_expr> a lrmoo:F2 ;
     rdfs:label "Il mastino di Baskerville"^^xsd:string ;
+    rdau:P60385 <https://example.org/ficto/Agent/caterina_ciccotti> ;
     crm:P72 "ita"^^xsd:language .
 
 <https://example.org/ficto/Expression/problema_finale_expr> a lrmoo:F2 ;
     rdfs:label "Il problema finale"^^xsd:string ;
+    rdau:P60385 <https://example.org/ficto/Agent/maria_gallone> ;
     crm:P72 "ita"^^xsd:language .
 
 <https://example.org/ficto/Expression/studio_rosso_expr> a lrmoo:F2 ;
     rdfs:label "Uno studio in rosso"^^xsd:string ;
+    rdau:P60385 <https://example.org/ficto/Agent/giancarlo_carlotti> ;
     crm:P72 "ita"^^xsd:language .
+
+<https://example.org/ficto/Expression/verità_d_expr> a lrmoo:F2 ;
+    rdfs:label "La verità sul caso D."^^xsd:string ;
+    crm:P72 "ita"^^xsd:language .
+
+<https://example.org/ficto/Concept/belief> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q34394"^^xsd:anyURI ;
+    skos:prefLabel "Belief"^^xsd:string .
+
+<https://example.org/ficto/Concept/worldview_interpersonal_attitude> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q49447"^^xsd:anyURI ;
+    skos:prefLabel "Worldview and interpersonal attitude"^^xsd:string .
 
 <https://example.org/ficto/Agent/arthur_doyle> a crm:E39 ;
     rdfs:label "Arhur Conan Doyle"^^xsd:string ;
     owl:sameAs "https://viaf.org/en/viaf/65283845"^^xsd:anyURI .
+
+<https://example.org/ficto/Concept/need> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q190258"^^xsd:anyURI ;
+    skos:prefLabel "Need"^^xsd:string .
+
+<https://example.org/ficto/Concept/occupation> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q12737077"^^xsd:anyURI ;
+    skos:prefLabel "Occupation"^^xsd:string .
+
+<https://example.org/ficto/Concept/recurring_personal_object> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q111547449"^^xsd:anyURI ;
+    skos:prefLabel "Recurring personal object"^^xsd:string .
+
+<https://example.org/ficto/Concept/skill> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q12379081"^^xsd:anyURI ;
+    skos:prefLabel "Skill"^^xsd:string .
+
+<https://example.org/ficto/Concept/existential_outlook> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q468777"^^xsd:anyURI ;
+    skos:prefLabel "Existential outlook"^^xsd:string .
+
+<https://example.org/ficto/Concept/self_perception> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1860557"^^xsd:anyURI ;
+    skos:prefLabel "Self perception"^^xsd:string .
+
+<https://example.org/ficto/Concept/kinetic_habit> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q1136816"^^xsd:anyURI ;
+    skos:prefLabel "Kinetic habit"^^xsd:string .
+
+<https://example.org/ficto/Concept/expertise> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q644238"^^xsd:anyURI ;
+    skos:prefLabel "Expertise"^^xsd:string .
+
+<https://example.org/ficto/Concept/symbolic_imagery> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q80071"^^xsd:anyURI ;
+    skos:prefLabel "Symbolic imagery"^^xsd:string .
+
+<https://example.org/ficto/Concept/mannerism> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1890336"^^xsd:anyURI ;
+    skos:prefLabel "Mannerism"^^xsd:string .
+
+<https://example.org/ficto/Concept/personal_style> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q11460"^^xsd:anyURI ;
+    skos:prefLabel "Personal style"^^xsd:string .
+
+<https://example.org/ficto/Concept/physical_feature> a skos:Concept ;
+    skos:closeMatch "http://vocab.getty.edu/page/aat/300435452"^^xsd:anyURI ;
+    skos:prefLabel "Physical feature"^^xsd:string .
+
+<https://example.org/ficto/Concept/habit> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q1136816"^^xsd:anyURI ;
+    skos:prefLabel "Habit"^^xsd:string .
+
+<https://example.org/ficto/Concept/emotional_state> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q4531715"^^xsd:anyURI ;
+    skos:prefLabel "Emotional state"^^xsd:string .
+
+<https://example.org/ficto/Concept/knowledge> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q9081"^^xsd:anyURI ;
+    skos:prefLabel "Knowledge"^^xsd:string .
+
+<https://example.org/ficto/Concept/attitude> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q622645"^^xsd:anyURI ;
+    skos:prefLabel "Attitude"^^xsd:string .
+
+<https://example.org/ficto/Concept/expression_habit> a skos:Concept ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q1136816"^^xsd:anyURI ;
+    skos:prefLabel "Expression habit"^^xsd:string .
+
+<https://example.org/ficto/Concept/psychological_profile> a skos:Concept ;
+    owl:sameAs "https://www.wikidata.org/wiki/Q3491351"^^xsd:anyURI ;
+    skos:prefLabel "Psychological profile"^^xsd:string .
 
