@@ -43,7 +43,7 @@
     <!-- http://iflastandards.info/ns/lrm/lrmoo/R75_is_based_on -->
 
     <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R75_is_based_on">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
     </owl:ObjectProperty>
 
@@ -116,7 +116,7 @@
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
     </owl:ObjectProperty>
 
@@ -136,7 +136,7 @@
 
     <owl:ObjectProperty rdf:about="https://example.org/ficto/hasAttribute">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
         <rdfs:range rdf:resource="https://example.org/ficto/Attribute"/>
         <rdfs:comment>This property allows to specify attributes of a character.</rdfs:comment>
         <rdfs:label>has Attribute</rdfs:label>
@@ -196,7 +196,7 @@
     <owl:ObjectProperty rdf:about="https://example.org/ficto/involves">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://example.org/ficto/NarrativeSegment"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
         <rdfs:comment>This property expresses the possible presence of a character within a narrative segment.</rdfs:comment>
         <rdfs:label>involves</rdfs:label>
     </owl:ObjectProperty>
@@ -205,8 +205,8 @@
 
     <owl:ObjectProperty rdf:about="https://example.org/ficto/isInspiredBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
         <rdfs:comment>This property expresses an inspiration from a fictional character to another fictional character.</rdfs:comment>
         <rdfs:label>is Inspired By</rdfs:label>
     </owl:ObjectProperty>
@@ -284,18 +284,10 @@
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F28_ExpressionCreation -->
 
     <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28_ExpressionCreation"/>
-    
-    <!-- http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation -->
-
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
 
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F2_Expression -->
 
     <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    
-    <!-- http://iflastandards.info/ns/lrm/lrmoo/F38_Character -->
-
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F38_Character"/>
     
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent -->
 
@@ -324,10 +316,6 @@
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
-
-    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataProperty"/>
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
@@ -432,6 +420,10 @@
     <!-- https://example.org/ficto/Symbols -->
 
     <owl:Class rdf:about="https://example.org/ficto/Symbols"/>
+    <rdfs:subClassOf rdf:resource="https://example.org/ficto/Attribute"/>
+        <rdfs:comment>The symbols ncludes: recurring objects in the character's life, along with the symbolic associations that the author may impose.</rdfs:comment>
+        <rdfs:label>Symbols</rdfs:label>
+    </owl:Class>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -538,9 +530,9 @@
         <rdfs:label>intra diegetic</rdfs:label>
     </owl:NamedIndividual>
 
-    <!-- https://example.org/ficto/narration-statement -->
+    <!-- https://example.org/ficto/narrated-speech -->
 
-    <owl:NamedIndividual rdf:about="https://example.org/ficto/narration-statement">
+    <owl:NamedIndividual rdf:about="https://example.org/ficto/narrated-speech">
         <rdf:type rdf:resource="https://example.org/ficto/FormOfSpeech"/>
         <rdfs:comment>The narrator rephrases the words of the characters.</rdfs:comment>
         <rdfs:label>narrated speech</rdfs:label>
@@ -562,11 +554,15 @@
         <rdfs:label>translation</rdfs:label>
     </owl:NamedIndividual>
 
+    <!-- https://example.org/ficto/object -->
+
     <owl:NamedIndividual rdf:about="https://example.org/ficto/object">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>Point of confluence of the action of the Subject.</rdfs:comment>
         <rdfs:label>object</rdfs:label>
     </owl:NamedIndividual>
+
+    <!-- https://example.org/ficto/subject -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/subject">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
@@ -574,11 +570,15 @@
         <rdfs:label>subject</rdfs:label>
     </owl:NamedIndividual>
 
+    <!-- https://example.org/ficto/helper -->
+
     <owl:NamedIndividual rdf:about="https://example.org/ficto/helper">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>Who helps the subject to conquer the object.</rdfs:comment>
         <rdfs:label>helper</rdfs:label>
     </owl:NamedIndividual>
+
+    <!-- https://example.org/ficto/opposer -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/opposer">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
@@ -586,17 +586,15 @@
         <rdfs:label>opposer</rdfs:label>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="https://example.org/ficto/recipient">
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
-        <rdfs:comment>Who benefits from the Object.</rdfs:comment>
-        <rdfs:label>recipient</rdfs:label>
-    </owl:NamedIndividual>
+    <!-- https://example.org/ficto/recipient -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/recipient">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>Who benefits from the Object.</rdfs:comment>
         <rdfs:label>recipient</rdfs:label>
     </owl:NamedIndividual>
+
+    <!-- https://example.org/ficto/destinator -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/destinator">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
