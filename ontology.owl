@@ -419,8 +419,8 @@
 
     <!-- https://example.org/ficto/Symbols -->
 
-    <owl:Class rdf:about="https://example.org/ficto/Symbols"/>
-    <rdfs:subClassOf rdf:resource="https://example.org/ficto/Attribute"/>
+    <owl:Class rdf:about="https://example.org/ficto/Symbols">
+        <rdfs:subClassOf rdf:resource="https://example.org/ficto/Attribute"/>
         <rdfs:comment>The symbols ncludes: recurring objects in the character's life, along with the symbolic associations that the author may impose.</rdfs:comment>
         <rdfs:label>Symbols</rdfs:label>
     </owl:Class>
