@@ -1054,7 +1054,7 @@
     rdau:P60447 <https://example.org/ficto/Agent/oulipopo> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
     crm:P4 "1974"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Narrative/narrative_3> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_4> .
 
 <https://example.org/ficto/ExpressionCreation/mastino_baskerville_exprcr> a lrmoo:F28 ;
     rdfs:label "Il mastino dei Baskerville"^^xsd:string ;
@@ -1062,7 +1062,7 @@
     rdau:P60447 <https://example.org/ficto/Agent/arthur_doyle> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300027389"^^xsd:anyURI ;
     crm:P4 "2015"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Narrative/narrative_5> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_3> .
 
 <https://example.org/ficto/ExpressionCreation/problema_finale_exprcr> a lrmoo:F28 ;
     rdfs:label "Il problema finale"^^xsd:string ;
@@ -1086,7 +1086,7 @@
     rdau:P60447 <https://example.org/ficto/Agent/f&l> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300049945"^^xsd:anyURI ;
     crm:P4 "1989"^^xsd:gYear ;
-    crm:P94 <https://example.org/ficto/Narrative/narrative_4> .
+    crm:P94 <https://example.org/ficto/Narrative/narrative_5> .
 
 <https://example.org/ficto/Genre/detective_fiction> a ficto:LiteraryGenre ;
     rdfs:label "Detective fiction"^^xsd:string ;
@@ -2909,7 +2909,7 @@
     skos:prefLabel "Expertise"^^xsd:string .
 
 <https://example.org/ficto/Concept/symbolic_imagery> a skos:Concept ;
-    owl:sameAs "https://www.wikidata.org/wiki/Q80071"^^xsd:anyURI ;
+    skos:closeMatch "https://www.wikidata.org/wiki/Q80071"^^xsd:anyURI ;
     skos:prefLabel "Symbolic imagery"^^xsd:string .
 
 <https://example.org/ficto/Concept/mannerism> a skos:Concept ;
