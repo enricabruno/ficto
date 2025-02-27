@@ -29,7 +29,7 @@ g.bind("prov", prov)
 g.bind("cito", cito)
 
 # CSV WORK CREATION
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - WorkCreation.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - WorkCreation.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -107,14 +107,14 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - WorkCre
                     elif key=="lrmoo:R3" or key=="lrmoo:R17":
                         obj = URIRef(ficto+"Expression/"+str(value))
                     elif key=="crm:P94":
-                        obj = URIRef(ficto+"Diegesis/"+str(value))
+                        obj = URIRef(ficto+"Narrative/"+str(value))
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
 # CSV WORK
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Work.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Work.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -192,14 +192,14 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Work.cs
                     elif key=="lrmoo:R3" or key=="lrmoo:R17":
                         obj = URIRef(ficto+"Expression/"+str(value))
                     elif key=="crm:P94":
-                        obj = URIRef(ficto+"Diegesis/"+str(value))
+                        obj = URIRef(ficto+"Narrative/"+str(value))
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
 # CSV EXPRESSION CREATION
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - ExpressionCreation.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - ExpressionCreation.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -284,7 +284,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Express
                     g.add((subj, predicate, obj))
 
 # CSV EXPRESSION
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Expression.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Expression.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -362,14 +362,14 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Express
                     elif key=="lrmooo:R3" or key=="lrmoo:R17":
                         obj = URIRef(ficto+"Expression/"+str(value))
                     elif key=="crm:P94":
-                        obj = URIRef(ficto+"Diegesis/"+str(value))
+                        obj = URIRef(ficto+"Narrative/"+str(value))
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
 # CSV AUTHORITY COLLECT AGENT
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - AuthorityCollectAgent.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - AuthorityCollectAgent.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -439,7 +439,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Authori
                     g.add((subj, predicate, obj))
 
 # CSV AUTHORITY AGENT
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - AuthorityAgent.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - AuthorityAgent.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -509,7 +509,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Authori
                     g.add((subj, predicate, obj))
 
 # CSV GENRE
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Genre.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - LiteraryGenre.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -524,7 +524,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Genre.c
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Genre/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.LiteraryGenre))
+            g.add((URIRef(ficto+"LiteraryGenre/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.LiteraryGenre))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -533,7 +533,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Genre.c
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"Genre/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"LiteraryGenre/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -579,7 +579,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Genre.c
                     g.add((subj, predicate, obj))
 
 # CSV NARRATIVE
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrative.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Narrative.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -649,7 +649,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrati
                     g.add((subj, predicate, obj))
 
 # CSV CHARACTER
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Character.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Character.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -719,7 +719,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Charact
                     g.add((subj, predicate, obj))
 
 # CSV NARRATOR
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrator.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Narrator.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -789,7 +789,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrato
                     g.add((subj, predicate, obj))
 
 # CSV CONCEPT
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Concept.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Concept.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -859,7 +859,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Concept
                     g.add((subj, predicate, obj))
 
 # NARRATIVE SEGMENT
-with open("//Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - NarrativeSegment.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - NarrativeSegment.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -929,7 +929,7 @@ with open("//Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Narrat
                     g.add((subj, predicate, obj))
 
 # ANAGR STATUS
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - AnagraphicalStatus.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - AnagraphicalStatus.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -995,6 +995,8 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Anagrap
                     # concept di skos:related
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    elif key=="ficto:linkedTo":
+                        obj = URIRef(ficto+"Genre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1002,7 +1004,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Anagrap
                     g.add((subj, predicate, obj))
 
 # CHAR/PS
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - CharacterAndPsychology.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - CharacterAndPsychology.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -1068,6 +1070,8 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Charact
                     # concept di skos:related
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    elif key=="ficto:linkedTo":
+                        obj = URIRef(ficto+"Genre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1075,7 +1079,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Charact
                     g.add((subj, predicate, obj))
 
 # PRAXIS
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Praxis.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Praxis.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -1099,7 +1103,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Praxis.
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"Praxis/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1141,6 +1145,8 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Praxis.
                     # concept di skos:related
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    elif key=="ficto:linkedTo":
+                        obj = URIRef(ficto+"Genre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1148,7 +1154,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Praxis.
                     g.add((subj, predicate, obj))
 
 # MODALITY
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Modality.csv", mode="r") as csv_file:
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Modality.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -1163,7 +1169,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Modalit
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Modality/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Modalityy))
+            g.add((URIRef(ficto+"Modality/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Modality))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -1172,7 +1178,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Modalit
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"Modality/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1214,14 +1220,16 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Modalit
                     # concept di skos:related
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    elif key=="ficto:linkedTo":
+                        obj = URIRef(ficto+"Genre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
-# Axiology
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Axiology.csv", mode="r") as csv_file:
+# AXIOLOGY
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Axiology.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -1245,7 +1253,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Axiolog
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"Axiology/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1287,14 +1295,16 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Axiolog
                     # concept di skos:related
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    elif key=="ficto:linkedTo":
+                        obj = URIRef(ficto+"Genre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
-# Symbols
-with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Symbols.csv", mode="r") as csv_file:
+# SYMBOLS
+with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Symbols.csv", mode="r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     # Iteration through each row
     for row in csv_reader:
@@ -1318,7 +1328,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Symbols
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"Symbols/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1360,17 +1370,16 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/dataset-MITE - Symbols
                     # concept di skos:related
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    elif key=="ficto:linkedTo":
+                        obj = URIRef(ficto+"Genre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
 
                     g.add((subj, predicate, obj))
 
-
-
-
 # Serialize the graph to a TTL file
-g.serialize(destination="baficto.ttl", format="ttl")
+g.serialize(destination="kbficto.ttl", format="ttl")
 
 # Optionally, print the triples in the graph for verification
 #for s, p, o in g.triples((None, None, None)):
