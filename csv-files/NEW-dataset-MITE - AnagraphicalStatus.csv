@@ -1,0 +1,9 @@
+ficto:AnagraphicalStatus,rdfs:label,skos:related,ficto:hastextualTransmission,ficto:linkedTo
+name,Sherlock Holmes,full_name,http://vocab.getty.edu/page/aat/300015644,detective_fiction
+feature_1,Height,physical_feature,http://vocab.getty.edu/page/aat/300015644,
+feature_2,Weight,physical_feature,http://vocab.getty.edu/page/aat/300015644,
+feature_3,Physical feature,physical_feature,http://vocab.getty.edu/page/aat/300015644,
+occupation_1,Study,studies,http://vocab.getty.edu/page/aat/300015644,
+occupation_2,Job,job,http://vocab.getty.edu/page/aat/300015644,
+occupation_3,Investigator,occupation,http://vocab.getty.edu/page/aat/300015644,detective_fiction
+socioec_status,Social status,social_status,http://vocab.getty.edu/page/aat/300015644,

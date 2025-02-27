@@ -1,0 +1,21 @@
+ficto:CharacterAndPsychology,rdfs:label,skos:related,ficto:hasTextualTransmission
+emo_state_1,Depression,depression,http://vocab.getty.edu/page/aat/300015644
+emo_state_2,Tranquillity,tranquillity,http://vocab.getty.edu/page/aat/300015644
+emo_state_3,Boredom,boredom,http://vocab.getty.edu/page/aat/300404309
+emo_state_4,Obtundation,obtundation,http://vocab.getty.edu/page/aat/300404309
+emo_state_5,Debility,debility,http://vocab.getty.edu/page/aat/300404309
+emo_state_12,Bothered,bothered,http://vocab.getty.edu/page/aat/300404309
+emo_state_13,Pale,pale,http://vocab.getty.edu/page/aat/300404309
+psych_prof_1,Outlandish,outlandish,http://vocab.getty.edu/page/aat/300015644
+psych_prof_2,Private,private,http://vocab.getty.edu/page/aat/300015644
+psych_prof_3,Expansive,expansive,http://vocab.getty.edu/page/aat/300015644
+psych_prof_4,Hyperactivity,hyperactivity,http://vocab.getty.edu/page/aat/300015644
+psych_prof_5,Apathy,apathy,http://vocab.getty.edu/page/aat/300015644
+psych_prof_6,Dreamer,dreamer,http://vocab.getty.edu/page/aat/300015644
+psych_prof_7,Psychological profile,psychological_profile,http://vocab.getty.edu/page/aat/300015644
+psych_prof_8,Self control,self_control,http://vocab.getty.edu/page/aat/300015644
+psych_prof_9,Rational,rational,http://vocab.getty.edu/page/aat/300015644
+psych_prof_10,Haughtiness,haughtiness,http://vocab.getty.edu/page/aat/300404309
+psych_prof_11,Fictitious,fictitious,http://vocab.getty.edu/page/aat/300404309
+psych_prof_12,Gloomy,gloomy,http://vocab.getty.edu/page/aat/300404309
+self_perception,Self concept,self_concept,http://vocab.getty.edu/page/aat/300015644

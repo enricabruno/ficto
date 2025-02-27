@@ -1,0 +1,47 @@
+skos:Concept,skos:prefLabel,owl:sameAs,skos:closeMatch
+full_name,Full name,https://www.wikidata.org/wiki/Q1071027,
+gaze,Gaze,https://www.wikidata.org/wiki/Q14467155,
+physical_feature,Physical feature,,https://www.wikidata.org/wiki/Q170494
+studies,Studies,https://www.wikidata.org/wiki/Q9347372,
+job,Job,https://www.wikidata.org/wiki/Q192581,
+occupation,Occupation,https://www.wikidata.org/wiki/Q12737077,
+social_status,Social status,https://www.wikidata.org/wiki/Q189970,
+depression,Depression,https://www.wikidata.org/wiki/Q4340209,
+private,Private,,https://www.wikidata.org/wiki/Q106765930
+self_concept,Self Concept,https://www.wikidata.org/wiki/Q1860557,
+rational,Rational,https://www.wikidata.org/wiki/Q12975179,
+outlandish,Outlandish,,http://dbpedia.org/resource/Unusual
+dreamer,Dreamer,,https://dbpedia.org/resource/Daydream
+exspansive,exspansive,,https://www.wikidata.org/wiki/Q26214118
+hyperactivity,Hyperactivity,https://www.wikidata.org/wiki/Q1640850,
+apathy,Apathy,https://www.wikidata.org/wiki/Q309406,
+sceptisism,,,https://www.wikidata.org/wiki/Q1998646
+spiritualism,,,https://www.wikidata.org/wiki/Q168796
+self_control,Self control,https://www.wikidata.org/wiki/Q1405524,
+tranquillity,Tranquillity,https://www.wikidata.org/wiki/Q1181836,
+boredom,Boredom,https://www.wikidata.org/wiki/Q34255,
+obtundation,Obtundation,https://www.wikidata.org/wiki/Q1975146,
+debility,Debility,https://www.wikidata.org/wiki/Q5248097,
+haughtiness,Haughtiness,https://www.wikidata.org/wiki/Q187234,
+bothered,Bothered,,https://www.wikidata.org/wiki/Q77776
+pale,Pale,,https://dbpedia.org/resource/White
+fictitious,Fictitious,,https://www.wikidata.org/wiki/Q182790
+gloomy,Gloomy,https://www.wikidata.org/wiki/Q123356202,
+method,Method,https://www.wikidata.org/wiki/Q1799072,
+belief,Belief,https://www.wikidata.org/wiki/Q34394,
+existential_outlook,Existential outlook,,https://www.wikidata.org/wiki/Q210501
+principle,Principle,,https://www.wikidata.org/wiki/Q48324
+attitude,Attitude,https://www.wikidata.org/wiki/Q622645,
+expression_habit,Expression habit,,https://www.wikidata.org/wiki/Q1136816
+habit,Habit,https://www.wikidata.org/wiki/Q1136816,
+kinetic_habit,Kinetic habit,,https://www.wikidata.org/wiki/Q1136816
+mannerism,Mannerism,https://www.wikidata.org/wiki/Q1890336,
+personal_style,Personal style,,https://www.wikidata.org/wiki/Q11460
+fame,Fame,https://www.wikidata.org/wiki/Q1519566,
+expertise,Expertise,https://www.wikidata.org/wiki/Q644238,
+interest,Interest,,https://www.wikidata.org/wiki/Q366791
+knowledge,Knowledge,https://www.wikidata.org/wiki/Q9081,
+skill,Skill,https://www.wikidata.org/wiki/Q12379081,
+need,Need,https://www.wikidata.org/wiki/Q190258,
+,Recurring personal object,,https://www.wikidata.org/wiki/Q111547449
+,Symbolic imagery,,https://www.wikidata.org/wiki/Q80071
