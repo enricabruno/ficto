@@ -1,15 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.example.org/ontology#"
-     xml:base="http://www.example.org/ontology"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns="https://example.org/ficto#"
+     xml:base="https://example.org/ficto"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology/>
-    
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://example.org/ficto/"/>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -21,30 +18,30 @@
 
     <!-- http://iflastandards.info/ns/lrm/lrmoo/R16_created -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R16_created">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R16">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1"/>
     </owl:ObjectProperty>
 
     <!-- http://iflastandards.info/ns/lrm/lrmoo/R17_created -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R17_created">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R17">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
     </owl:ObjectProperty>
 
     <!-- http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R3">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
     </owl:ObjectProperty>
 
     <!-- http://iflastandards.info/ns/lrm/lrmoo/R75_is_based_on -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R75_is_based_on">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R75">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39"/>
     </owl:ObjectProperty>
 
     <!-- http://purl.org/spar/cito/cites -->
@@ -57,59 +54,59 @@
     <!-- http://rdaregistry.info/Elements/u/rdau:P60385 -->
 
     <owl:ObjectProperty rdf:about="http://rdaregistry.info/Elements/u/rdau:P60385">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F55"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39"/>
     </owl:ObjectProperty>
 
     <!-- http://rdaregistry.info/Elements/u/rdau:P60447 -->
 
     <owl:ObjectProperty rdf:about="http://rdaregistry.info/Elements/u/rdau:P60447">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F55"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39"/>
     </owl:ObjectProperty>
 
     <!-- http://rdaregistry.info/Elements/u/rdau:P60527 -->
 
     <owl:ObjectProperty rdf:about="http://rdaregistry.info/Elements/u/rdau:P60527">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F27"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52"/>
     </owl:ObjectProperty>
     
     <!-- http://rdaregistry.info/Elements/u/rdau:P61020 -->
 
     <owl:ObjectProperty rdf:about="http://rdaregistry.info/Elements/u/rdau:P61020">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52"/>
     </owl:ObjectProperty>
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/P2_type -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_type">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
     </owl:ObjectProperty>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of">
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P46">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"/>
         <rdfs:range rdf:resource="https://example.org/ficto/NarrativeSegment"/>
     </owl:ObjectProperty>
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/P72_has_language -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P72_has_language">
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P72">
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E56_Language"/>
     </owl:ObjectProperty>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/P94_has_created -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P94_has_created">
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P94">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"/>
     </owl:ObjectProperty>
     
@@ -136,7 +133,7 @@
 
     <owl:ObjectProperty rdf:about="https://example.org/ficto/hasAttribute">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
         <rdfs:range rdf:resource="https://example.org/ficto/Attribute"/>
         <rdfs:comment>This property allows to specify attributes of a character.</rdfs:comment>
         <rdfs:label>has Attribute</rdfs:label>
@@ -148,7 +145,7 @@
         <rdfs:domain rdf:resource="https://example.org/ficto/NarrativeSegment"/>
         <rdfs:range rdf:resource="https://example.org/ficto/FormOfSpeech"/>
         <rdfs:comment>This property allows to specify the type of speech of a narrative segment.</rdfs:comment>
-        <rdfs:label>has Source Type</rdfs:label>
+        <rdfs:label>has Form of Speech</rdfs:label>
     </owl:ObjectProperty>
     
     <!-- https://example.org/ficto/hasNarrativeIstance -->
@@ -196,7 +193,7 @@
     <owl:ObjectProperty rdf:about="https://example.org/ficto/involves">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://example.org/ficto/NarrativeSegment"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
         <rdfs:comment>This property expresses the possible presence of a character within a narrative segment.</rdfs:comment>
         <rdfs:label>involves</rdfs:label>
     </owl:ObjectProperty>
@@ -205,8 +202,8 @@
 
     <owl:ObjectProperty rdf:about="https://example.org/ficto/isInspiredBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
-        <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
         <rdfs:comment>This property expresses an inspiration from a fictional character to another fictional character.</rdfs:comment>
         <rdfs:label>is Inspired By</rdfs:label>
     </owl:ObjectProperty>
@@ -271,43 +268,43 @@
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character -->
 
-    <owl:Class rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character"/>
+    <owl:Class rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/F38"/>
     
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F1_Work -->
 
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1"/>
     
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation -->
 
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F27_Work_Creation"/>
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F27"/>
     
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F28_ExpressionCreation -->
 
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28_ExpressionCreation"/>
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
 
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F2_Expression -->
 
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2"/>
     
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent -->
 
-    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F55_Collective_Agent"/>
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F55"/>
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39"/>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E52"/>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55"/>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/E56_Language -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E56_Language"/>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E56"/>
     
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative -->
 
@@ -444,7 +441,7 @@
     <!-- https://example.org/ficto/apocryphal -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/apocryphal">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
         <rdfs:comment>A apocryphal is a non-authentic, non-genuine book, writing, or document.</rdfs:comment>
         <rdfs:label>apocryphal</rdfs:label>
     </owl:NamedIndividual>
@@ -541,7 +538,7 @@
     <!-- https://example.org/ficto/pastiche -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/pastiche">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
         <rdfs:comment>A pastiche is generally a work composed, in whole or in large part, of excerpts from pre-existing works, mostly with imitative intent.</rdfs:comment>
         <rdfs:label>pastiche</rdfs:label>
     </owl:NamedIndividual>
@@ -549,7 +546,7 @@
     <!-- https://example.org/ficto/translation -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/translation">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
         <rdfs:comment>Translated versions of a text.</rdfs:comment>
         <rdfs:label>translation</rdfs:label>
     </owl:NamedIndividual>
