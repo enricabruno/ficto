@@ -43,5 +43,6 @@ interest,Interest,,https://www.wikidata.org/wiki/Q366791
 knowledge,Knowledge,https://www.wikidata.org/wiki/Q9081,
 skill,Skill,https://www.wikidata.org/wiki/Q12379081,
 need,Need,https://www.wikidata.org/wiki/Q190258,
-,Recurring personal object,,https://www.wikidata.org/wiki/Q111547449
-,Symbolic imagery,,https://www.wikidata.org/wiki/Q80071
+recurring_personal_object,Recurring personal object,,https://www.wikidata.org/wiki/Q111547449
+symbolic_imagery,Symbolic imagery,,https://www.wikidata.org/wiki/Q80071
+idiom_expression,Idiomatic expression,https://www.wikidata.org/wiki/Q110983878,
