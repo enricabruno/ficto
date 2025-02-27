@@ -271,16 +271,21 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Exp
                     # Value corresponding to column
                     elif key=="rdau:P60447" or key=="rdau:P60447" or key=="rdau:P60385":
                         obj = URIRef(ficto+"Agent/"+str(value))
-                    # Otherwise, value=URI
+                    # obj=work
                     elif key=="lrmoo:R16":
                         obj = URIRef(ficto+"Work/"+str(value))
+                    # obj=expr
                     elif key=="lrmoo:R3" or key=="lrmoo:R17":
                         obj = URIRef(ficto+"Expression/"+str(value))
+                    # obj= narr
                     elif key=="crm:P94":
                         obj = URIRef(ficto+"Narrative/"+str(value))
+                    #obj=type
+                    elif key=="crm:P2":
+                        obj = URIRef(ficto+"Type/"+str(value))
+                    # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
-
                     g.add((subj, predicate, obj))
 
 # CSV EXPRESSION
@@ -642,6 +647,9 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
+                    # When obj=narrseg
+                    elif key=="crm:P46":
+                        obj = URIRef(ficto+"NarrativeSegment/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -712,6 +720,15 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Cha
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
+                    # When obj=role
+                    elif key=="ficto:narrativeRole":
+                        obj = URIRef(ficto+"Role/"+str(value))
+                    # When obj=character
+                    elif key=="ficto:isInspiredBy":
+                        obj = URIRef(ficto+"Character/"+str(value))
+                    # When obj=agent
+                    elif key=="frbroo:R57":
+                        obj = URIRef(ficto+"Agent/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -782,6 +799,15 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
+                    # When obj=narrative position
+                    elif key=="ficto:hasNarrativePosition":
+                        obj = URIRef(ficto+"NarrativePosition/"+str(value))
+                    # When obj=narrative level
+                    elif key=="ficto:hasNarrativeLevel":
+                        obj = URIRef(ficto+"NarrativeLevel/"+str(value))
+                    # When obj=focalization
+                    elif key=="ficto:hasPointOfView":
+                        obj = URIRef(ficto+"Focalization/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -874,7 +900,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.NarrativeSegment))
+            g.add((URIRef(ficto+"Narrative/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.NarrativeSegment))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -883,7 +909,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"Narrative/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -922,6 +948,15 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
+                    # When obj is a character
+                    elif key=="ficto:involves":
+                        obj = URIRef(ficto+"Character/"+str(value))
+                    # When obj is a narrator
+                    elif key=="ficto:hasNarrativeInstance":
+                        obj = URIRef(ficto+"Narrator/"+str(value))
+                    # When obj is a form of speech
+                    elif key=="ficto:hasFormOfSpeech":
+                        obj = URIRef(ficto+"FormOfSpeech/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -992,9 +1027,10 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Ana
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
-                    # concept di skos:related
+                    # When obj=concept
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    # When obj=genre
                     elif key=="ficto:linkedTo":
                         obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
@@ -1067,9 +1103,10 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Cha
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
-                    # concept di skos:related
+                    # When obj=concept
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    # When obj=genre
                     elif key=="ficto:linkedTo":
                         obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
@@ -1142,9 +1179,10 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Pra
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
-                    # concept di skos:related
+                    # When obj=concept
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    # When obj=genre
                     elif key=="ficto:linkedTo":
                         obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
@@ -1217,9 +1255,10 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Mod
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
-                    # concept di skos:related
+                    # When obj=concept
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    # When obj=genre
                     elif key=="ficto:linkedTo":
                         obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
@@ -1292,9 +1331,10 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Axi
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
-                    # concept di skos:related
+                    # When obj=concept
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    # When obj=genre
                     elif key=="ficto:linkedTo":
                         obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
@@ -1367,9 +1407,10 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Sym
                     # String URI=value is a URI
                     elif http_regex.match(value):
                         obj = Literal(value, datatype=XSD.anyURI)
-                    # concept di skos:related
+                    # When obj=concept
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
+                    # When obj=genre
                     elif key=="ficto:linkedTo":
                         obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
