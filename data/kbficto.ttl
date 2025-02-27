@@ -38,7 +38,7 @@
     rdfs:label "Sherlock Holmes"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/full_name> ;
     ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/AnagraphicalStatus/occupation_1> a ficto:AnagraphicalStatus ;
     rdfs:label "Study"^^xsd:string ;
@@ -54,7 +54,7 @@
     rdfs:label "Investigator"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/occupation> ;
     ficto:hastextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/AnagraphicalStatus/socioec_status> a ficto:AnagraphicalStatus ;
     rdfs:label "Social status"^^xsd:string ;
@@ -80,7 +80,7 @@
     rdfs:label "Method"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/method> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Axiology/principle> a ficto:Axiology ;
     rdfs:label "Principle"^^xsd:string ;
@@ -357,14 +357,6 @@
     crm:P4 "1989"^^xsd:gYear ;
     crm:P94 <https://example.org/ficto/Narrative/narrative_5> .
 
-<https://example.org/ficto/LiteraryGenre/detective_fiction> a ficto:LiteraryGenre ;
-    rdfs:label "Detective fiction"^^xsd:string ;
-    owl:sameAs "http://vocab.getty.edu/page/aat/300252918"^^xsd:anyURI .
-
-<https://example.org/ficto/LiteraryGenre/fairy_tales> a ficto:LiteraryGenre ;
-    rdfs:label "Fairy tales"^^xsd:string ;
-    owl:sameAs "http://vocab.getty.edu/page/aat/300185684"^^xsd:anyURI .
-
 <https://example.org/ficto/Modality/aspiration_1> a ficto:Modality ;
     rdfs:label "Fame"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/fame> ;
@@ -374,19 +366,19 @@
     rdfs:label "Insightful"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/expertise> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Modality/expertise_2> a ficto:Modality ;
     rdfs:label "Observant"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/expertise> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Modality/expertise_3> a ficto:Modality ;
     rdfs:label "Deductive"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/expertise> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Modality/expertise_4> a ficto:Modality ;
     rdfs:label "Practical mind"^^xsd:string ;
@@ -447,13 +439,13 @@
     rdfs:label "London's criminal environment"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/knowledge> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Modality/knowledge_2> a ficto:Modality ;
     rdfs:label "Living encyclopedia of crime"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/knowledge> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300015644"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Modality/knowledge_3> a ficto:Modality ;
     rdfs:label "Vast and detailed culture"^^xsd:string ;
@@ -509,7 +501,7 @@
     rdfs:label "Disappearance of Moriarty"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/need> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Modality/skill_1> a ficto:Modality ;
     rdfs:label "Swordsman"^^xsd:string ;
@@ -1944,7 +1936,7 @@
     rdfs:label "Elémentaire, mon cher Watson (Elementary, my dear Watson)"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/expression_habit> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Praxis/exp_habit_15> a ficto:Praxis ;
     rdfs:label "Voilà qui est intéressant (Now this is interesting)"^^xsd:string ;
@@ -1960,7 +1952,7 @@
     rdfs:label "Elementare, mio caro Dupin (Elementary, my dear Dupin)"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/expression_habit> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/detective_fiction> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/detective_fiction> .
 
 <https://example.org/ficto/Praxis/exp_habit_2> a ficto:Praxis ;
     rdfs:label "Hearty laugh"^^xsd:string ;
@@ -2136,13 +2128,13 @@
     rdfs:label "Pèlerine rouge (red cape)"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/personal_style> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/fairy_tales> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/fairy_tales> .
 
 <https://example.org/ficto/Praxis/pers_style_8> a ficto:Praxis ;
     rdfs:label "Une petite jupe (a little skirt)"^^xsd:string ;
     skos:related <https://example.org/ficto/Concept/personal_style> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
-    ficto:linkedTo <https://example.org/ficto/Genre/fairy_tales> .
+    ficto:linkedTo <https://example.org/ficto/LiteraryGenre/fairy_tales> .
 
 <https://example.org/ficto/Praxis/pers_style_9> a ficto:Praxis ;
     rdfs:label "Cloak with wide folds"^^xsd:string ;
@@ -2593,6 +2585,10 @@
     rdfs:label "La verità sul caso D."^^xsd:string ;
     crm:P72 "ita"^^xsd:language .
 
+<https://example.org/ficto/LiteraryGenre/fairy_tales> a ficto:LiteraryGenre ;
+    rdfs:label "Fairy tales"^^xsd:string ;
+    owl:sameAs "http://vocab.getty.edu/page/aat/300185684"^^xsd:anyURI .
+
 <https://example.org/ficto/Concept/physical_feature> a skos:Concept ;
     skos:closeMatch "https://www.wikidata.org/wiki/Q170494"^^xsd:anyURI ;
     skos:prefLabel "Physical feature"^^xsd:string .
@@ -2628,6 +2624,10 @@
 <https://example.org/ficto/Concept/personal_style> a skos:Concept ;
     skos:closeMatch "https://www.wikidata.org/wiki/Q11460"^^xsd:anyURI ;
     skos:prefLabel "Personal style"^^xsd:string .
+
+<https://example.org/ficto/LiteraryGenre/detective_fiction> a ficto:LiteraryGenre ;
+    rdfs:label "Detective fiction"^^xsd:string ;
+    owl:sameAs "http://vocab.getty.edu/page/aat/300252918"^^xsd:anyURI .
 
 <https://example.org/ficto/Concept/knowledge> a skos:Concept ;
     owl:sameAs "https://www.wikidata.org/wiki/Q9081"^^xsd:anyURI ;

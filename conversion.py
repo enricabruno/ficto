@@ -996,7 +996,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Ana
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
                     elif key=="ficto:linkedTo":
-                        obj = URIRef(ficto+"Genre/"+str(value))
+                        obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1071,7 +1071,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Cha
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
                     elif key=="ficto:linkedTo":
-                        obj = URIRef(ficto+"Genre/"+str(value))
+                        obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1146,7 +1146,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Pra
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
                     elif key=="ficto:linkedTo":
-                        obj = URIRef(ficto+"Genre/"+str(value))
+                        obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1221,7 +1221,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Mod
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
                     elif key=="ficto:linkedTo":
-                        obj = URIRef(ficto+"Genre/"+str(value))
+                        obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1296,7 +1296,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Axi
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
                     elif key=="ficto:linkedTo":
-                        obj = URIRef(ficto+"Genre/"+str(value))
+                        obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -1371,7 +1371,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Sym
                     elif key=="skos:related":
                         obj = URIRef(ficto+"Concept/"+str(value))
                     elif key=="ficto:linkedTo":
-                        obj = URIRef(ficto+"Genre/"+str(value))
+                        obj = URIRef(ficto+"LiteraryGenre/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
