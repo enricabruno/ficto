@@ -874,7 +874,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"NarrativeSegment/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.NarrativeSegment))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.NarrativeSegment))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -883,7 +883,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"NarrativeSegment/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -944,7 +944,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Ana
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"AnagraphicalStatus/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.AnagraphicalStatus))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.AnagraphicalStatus))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -953,7 +953,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Ana
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"AnagraphicalStatus/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1019,7 +1019,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Cha
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.CharacterAndPsychology))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.CharacterAndPsychology))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -1028,7 +1028,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Cha
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"CharacterAndPsychology/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1094,7 +1094,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Pra
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Praxis/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Praxis))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Praxis))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -1103,7 +1103,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Pra
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"Praxis/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1169,7 +1169,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Mod
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Modality/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Modality))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Modality))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -1178,7 +1178,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Mod
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"Modality/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1244,7 +1244,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Axi
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Axiology/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Axiology))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Axiology))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -1253,7 +1253,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Axi
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"Axiology/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
@@ -1319,7 +1319,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Sym
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Symbols/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Symbols))
+            g.add((URIRef(ficto+str(row.get(list(row.keys())[0]))), RDF.type, ficto.Symbols))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -1328,7 +1328,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Sym
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"Symbols/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
