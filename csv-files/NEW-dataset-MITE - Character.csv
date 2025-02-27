@@ -20,5 +20,5 @@ moriarty_lipo,Professor Moriarty,opposer,,
 lestrade_lipo,Lestrade,helper,,
 sherlock_fl,Sherlock Holmes,subject,,joseph_bell
 watson_fl,Dr Watson,helper,,
-dupin_fl,Auguste Dupin,subject,,dupin_1
-poirot_fl,Hercule Poirot,subject,,poirot_1
+dupin_fl,Auguste Dupin,subject,dupin_1,
+poirot_fl,Hercule Poirot,subject,poirot_1,
