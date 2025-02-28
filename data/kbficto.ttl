@@ -76,23 +76,7 @@
     rdfs:label "Joseph Stangerson"^^xsd:string ;
     ficto:narrativeRole <https://example.org/ficto/Role/object> .
 
-<https://example.org/ficto/Character/watson_doyle1> a frbroo:F38 ;
-    rdfs:label "Dr Watson"^^xsd:string ;
-    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
-
-<https://example.org/ficto/Character/watson_doyle2> a frbroo:F38 ;
-    rdfs:label "Dr Watson"^^xsd:string ;
-    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
-
-<https://example.org/ficto/Character/watson_doyle3> a frbroo:F38 ;
-    rdfs:label "Dr Watson"^^xsd:string ;
-    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
-
 <https://example.org/ficto/Character/watson_fl> a frbroo:F38 ;
-    rdfs:label "Dr Watson"^^xsd:string ;
-    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
-
-<https://example.org/ficto/Character/watson_lipo> a frbroo:F38 ;
     rdfs:label "Dr Watson"^^xsd:string ;
     ficto:narrativeRole <https://example.org/ficto/Role/helper> .
 
@@ -1415,11 +1399,13 @@
     ficto:involves <https://example.org/ficto/Character/sherlock_doyle5> .
 
 <https://example.org/ficto/Narrator/narrator_1.2> a ficto:Narrator ;
+    owl:sameAs <https://example.org/ficto/Character/watson_doyle1> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/extra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/zero> .
 
 <https://example.org/ficto/Narrator/narrator_2.2> a ficto:Narrator ;
+    owl:sameAs <https://example.org/ficto/Character/watson_doyle2> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/extra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/zero> .
@@ -1764,7 +1750,7 @@
         <https://example.org/ficto/NarrativeSegment/narr_seg_expr_5.9> .
 
 <https://example.org/ficto/Narrator/narrator_3.1> a ficto:Narrator ;
-    owl:sameAs ficto:watson_doyle3 ;
+    owl:sameAs <https://example.org/ficto/Character/watson_doyle3> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/extra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/zero> .
@@ -2286,6 +2272,22 @@ ficto:symb_imag_7 a ficto:Symbols ;
     skos:related <https://example.org/ficto/Concept/symbolic_imagery> ;
     ficto:hasTextualTransmission "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI .
 
+<https://example.org/ficto/Character/watson_doyle1> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
+
+<https://example.org/ficto/Character/watson_doyle2> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
+
+<https://example.org/ficto/Character/watson_doyle3> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
+
+<https://example.org/ficto/Character/watson_lipo> a frbroo:F38 ;
+    rdfs:label "Dr Watson"^^xsd:string ;
+    ficto:narrativeRole <https://example.org/ficto/Role/helper> .
+
 <https://example.org/ficto/Concept/interest> a skos:Concept ;
     skos:closeMatch "https://www.wikidata.org/wiki/Q366791"^^xsd:anyURI ;
     skos:prefLabel "Interest"^^xsd:string .
@@ -2318,7 +2320,7 @@ ficto:symb_imag_7 a ficto:Symbols ;
     owl:sameAs "http://vocab.getty.edu/page/aat/300185684"^^xsd:anyURI .
 
 <https://example.org/ficto/Narrator/narrator_4.1> a ficto:Narrator ;
-    owl:sameAs ficto:watson_doyle4 ;
+    owl:sameAs <https://example.org/ficto/Character/watson_lipo> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/extra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/zero> .
@@ -2611,6 +2613,7 @@ ficto:methodology a ficto:Axiology ;
     skos:prefLabel "Attitude"^^xsd:string .
 
 <https://example.org/ficto/Narrator/narrator_3.2> a ficto:Narrator ;
+    owl:sameAs <https://example.org/ficto/Character/watson_doyle3> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/intra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/internal> .
@@ -2621,6 +2624,7 @@ ficto:methodology a ficto:Axiology ;
     ficto:narrativeRole <https://example.org/ficto/Role/subject> .
 
 <https://example.org/ficto/Narrator/narrator_4.2> a ficto:Narrator ;
+    owl:sameAs <https://example.org/ficto/Character/watson_lipo> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/intra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/internal> .
@@ -2631,7 +2635,7 @@ ficto:methodology a ficto:Axiology ;
     ficto:narrativeRole <https://example.org/ficto/Role/subject> .
 
 <https://example.org/ficto/Narrator/narrator_2.1> a ficto:Narrator ;
-    owl:sameAs ficto:watson_doyle2 ;
+    owl:sameAs <https://example.org/ficto/Character/watson_doyle2> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/intra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/internal> .
@@ -2643,7 +2647,7 @@ ficto:methodology a ficto:Axiology ;
     ficto:narrativeRole <https://example.org/ficto/Role/subject> .
 
 <https://example.org/ficto/Narrator/narrator_1.1> a ficto:Narrator ;
-    owl:sameAs ficto:watson_doyle1 ;
+    owl:sameAs <https://example.org/ficto/Character/watson_doyle1> ;
     ficto:hasNarrativeLevel <https://example.org/ficto/NarrativeLevel/intra-diegetic> ;
     ficto:hasNarrativePosition <https://example.org/ficto/NarrativePosition/homo-diegetic> ;
     ficto:hasPointOfView <https://example.org/ficto/Focalization/internal> .

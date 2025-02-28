@@ -808,6 +808,9 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                     # When obj=focalization
                     elif key=="ficto:hasPointOfView":
                         obj = URIRef(ficto+"Focalization/"+str(value))
+                    # When obj=charac
+                    elif key=="owl:sameAs":
+                        obj = URIRef(ficto+"Character/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
