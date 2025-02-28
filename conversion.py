@@ -729,6 +729,8 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Cha
                     # When obj=agent
                     elif key=="frbroo:R57":
                         obj = URIRef(ficto+"Agent/"+str(value))
+                    elif key=="dul:hasRole":
+                        obj = URIRef(ficto+"Role/"+str(value))
                     # Otherwise, value=URI
                     else:
                         obj = URIRef(ficto+str(value))
@@ -903,7 +905,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
             uncinate_regex = re.compile(r'^«[^»]*»')
 
             # Add a triple that associates the first column's value in the row with the type of entity
-            g.add((URIRef(ficto+"Narrative/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.NarrativeSegment))
+            g.add((URIRef(ficto+"NarrativeSegment/"+str(row.get(list(row.keys())[0]))), RDF.type, ficto.NarrativeSegment))
 
             # Skip the first key
             if key != list (row.keys())[0]:
@@ -912,7 +914,7 @@ with open("/Users/enrica/Documents/GitHub/ficto/csv-files/NEW-dataset-MITE - Nar
                 if value:
 
                     # Subject
-                    subj = URIRef(ficto+"Narrative/"+str(row.get(list(row.keys())[0])))
+                    subj = URIRef(ficto+"NarrativeSegment/"+str(row.get(list(row.keys())[0])))
 
                     # Split the predicate in prefix and suffix
                     column_split = str(key).split(":")
