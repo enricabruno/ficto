@@ -1,10 +1,10 @@
-frbroo:F38,rdfs:label,ficto:narrativeRole,ficto:isInspiredBy,frbroo:R57
+frbroo:F38,rdfs:label,dul:hasRole,ficto:isInspiredBy,frbroo:R57
 sherlock_doyle1,Sherlock Holmes,subject,dupin_1,joseph_bell
 watson_doyle1,Dr Watson,helper,,
 stamford_doyle1,Stamford,helper,,
-gregson_doyle_1,Tobias Gregson,destinator,,metropolitan_police
-lestrade_doyle1,Lestrade,opposer,,metropolitan_police
-hope_doyle1,Jefferson Hope,opposer,,
+gregson_doyle_1,Tobias Gregson,sender,,metropolitan_police
+lestrade_doyle1,Lestrade,opponent,,metropolitan_police
+hope_doyle1,Jefferson Hope,opponent,,
 drebber_doyle1,Enoch J. Drebber,object,,
 stangerson_doyle1,Joseph Stangerson,object,,
 sherlock_doyle2,Sherlock Holmes,subject,,joseph_bell
@@ -12,11 +12,11 @@ watson_doyle2,Dr Watson,helper,,
 mortimer_doyle2,James Mortimer,helper,,
 sherlock_doyle3,Sherlock Holmes,subject,,joseph_bell
 watson_doyle3,Dr Watson,helper,,
-moriarty_doyle3,Professor Moriarty,opposer,,napoleon
+moriarty_doyle3,Professor Moriarty,opponent,,napoleon
 sherlock_lipo,Sherlock Holmes,subject,dupin_1,joseph_bell
 sherlock_lipo,,,little_red_riding_hood,
 watson_lipo,Dr Watson,helper,,
-moriarty_lipo,Professor Moriarty,opposer,,
+moriarty_lipo,Professor Moriarty,opponent,,
 lestrade_lipo,Lestrade,helper,,
 sherlock_fl,Sherlock Holmes,subject,,joseph_bell
 watson_fl,Dr Watson,helper,,

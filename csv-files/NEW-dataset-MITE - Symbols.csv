@@ -1,10 +1,10 @@
-ficto:Symbols,rdfs:label,skos:related,ficto:hasTextualTransmission,ficto:linkedto
+ficto:Symbols,rdfs:label,skos:related,ficto:hasTextualTransmission,ficto:linkedTo
 recur_p_obj_1,Tape measure,recurring_personal_object,http://vocab.getty.edu/page/aat/300015644,detective_fiction
 recur_p_obj_2,Magnifying glass,recurring_personal_object,http://vocab.getty.edu/page/aat/300015644,detective_fiction
 recur_p_obj_3,Pipe du matin (morning pipe),recurring_personal_object,http://vocab.getty.edu/page/aat/300015644,
 recur_p_obj_4,Silver cigarette case,recurring_personal_object,http://vocab.getty.edu/page/aat/300015644,
 recur_p_obj_5,Persian babouche (Persian slippers),recurring_personal_object,http://vocab.getty.edu/page/aat/300015644,
-symb_imag_1,Purebred pointer,symbolic_imagery,http://vocab.getty.edu/page/aat/300015644,
+symb_imag_1,Hunting dog,symbolic_imagery,http://vocab.getty.edu/page/aat/300015644,
 symb_imag_2,Bloodhound,symbolic_imagery,http://vocab.getty.edu/page/aat/300015644,
 symb_imag_3,Lark,symbolic_imagery,http://vocab.getty.edu/page/aat/300015644,
 symb_imag_4,General,symbolic_imagery,http://vocab.getty.edu/page/aat/300015644,
