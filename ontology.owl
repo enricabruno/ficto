@@ -86,7 +86,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2">
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
-        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2"/>
     </owl:ObjectProperty>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of -->
@@ -298,9 +298,9 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E52"/>
     
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P2_Type -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55"/>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2"/>
     
     <!-- http://www.cidoc-crm.org/cidoc-crm/E56_Language -->
 
@@ -441,7 +441,7 @@
     <!-- https://example.org/ficto/apocryphal -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/apocryphal">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2"/>
         <rdfs:comment>A apocryphal is a non-authentic, non-genuine book, writing, or document.</rdfs:comment>
         <rdfs:label>apocryphal</rdfs:label>
     </owl:NamedIndividual>
@@ -538,7 +538,7 @@
     <!-- https://example.org/ficto/pastiche -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/pastiche">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2"/>
         <rdfs:comment>A pastiche is generally a work composed, in whole or in large part, of excerpts from pre-existing works, mostly with imitative intent.</rdfs:comment>
         <rdfs:label>pastiche</rdfs:label>
     </owl:NamedIndividual>
@@ -546,7 +546,7 @@
     <!-- https://example.org/ficto/translation -->
 
     <owl:NamedIndividual rdf:about="https://example.org/ficto/translation">
-        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55"/>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2"/>
         <rdfs:comment>Translated versions of a text.</rdfs:comment>
         <rdfs:label>translation</rdfs:label>
     </owl:NamedIndividual>
