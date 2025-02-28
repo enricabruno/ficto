@@ -124,7 +124,7 @@
     lrmoo:R17 <https://example.org/ficto/Expression/le_loup_chantant_expr> ;
     rdau:P60447 <https://example.org/ficto/Agent/oulipopo> ;
     crm:P2 "http://vocab.getty.edu/page/aat/300404309"^^xsd:anyURI ;
-    crm:P4 "1974"^^xsd:gYear ;
+    crm:P4 "1987"^^xsd:gYear ;
     crm:P94 <https://example.org/ficto/Narrative/narrative_4> .
 
 <https://example.org/ficto/ExpressionCreation/mastino_baskerville_exprcr> a lrmoo:F28 ;
@@ -1434,7 +1434,7 @@
     rdfs:label "Le loup chantant de Forest Gate"^^xsd:string ;
     lrmoo:R16 <https://example.org/ficto/Work/le_loup_chantant_work> ;
     rdau:P60447 <https://example.org/ficto/Agent/oulipopo> ;
-    rdau:P60527 "1975"^^xsd:gYear .
+    rdau:P60527 "1974"^^xsd:gYear .
 
 <https://example.org/ficto/WorkCreation/study_scarlet_workcr> a lrmoo:F27 ;
     rdfs:label "A Study in Scarlet"^^xsd:string ;
