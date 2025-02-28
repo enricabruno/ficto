@@ -575,28 +575,28 @@
         <rdfs:label>helper</rdfs:label>
     </owl:NamedIndividual>
 
-    <!-- https://example.org/ficto/opposer -->
+    <!-- https://example.org/ficto/opponent -->
 
-    <owl:NamedIndividual rdf:about="https://example.org/ficto/opposer">
+    <owl:NamedIndividual rdf:about="https://example.org/ficto/opponent">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>Who hinders the subject towards the conquest of the object.</rdfs:comment>
-        <rdfs:label>opposer</rdfs:label>
+        <rdfs:label>opponent</rdfs:label>
     </owl:NamedIndividual>
 
-    <!-- https://example.org/ficto/recipient -->
+    <!-- https://example.org/ficto/receiver -->
 
-    <owl:NamedIndividual rdf:about="https://example.org/ficto/recipient">
+    <owl:NamedIndividual rdf:about="https://example.org/ficto/receiver">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>Who benefits from the Object.</rdfs:comment>
-        <rdfs:label>recipient</rdfs:label>
+        <rdfs:label>receiver</rdfs:label>
     </owl:NamedIndividual>
 
-    <!-- https://example.org/ficto/destinator -->
+    <!-- https://example.org/ficto/sender -->
 
-    <owl:NamedIndividual rdf:about="https://example.org/ficto/destinator">
+    <owl:NamedIndividual rdf:about="https://example.org/ficto/sender">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>Who places the Object as an object of desire and value.</rdfs:comment>
-        <rdfs:label>destinator</rdfs:label>
+        <rdfs:label>sender</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
