@@ -1,10 +1,10 @@
 ficto:Narrator,owl:sameAs,ficto:hasNarrativePosition,ficto:hasNarrativeLevel,ficto:hasPointOfView
 narrator_1.1,watson_doyle1,homo-diegetic,intra-diegetic,internal
-narrator_1.2,,homo-diegetic,extra-diegetic,zero
+narrator_1.2,watson_doyle1,homo-diegetic,extra-diegetic,zero
 narrator_2.1,watson_doyle2,homo-diegetic,intra-diegetic,internal
-narrator_2.2,,homo-diegetic,extra-diegetic,zero
+narrator_2.2,watson_doyle2,homo-diegetic,extra-diegetic,zero
 narrator_3.1,watson_doyle3,homo-diegetic,extra-diegetic,zero
-narrator_3.2,,homo-diegetic,intra-diegetic,internal
-narrator_4.1,watson_doyle4,homo-diegetic,extra-diegetic,zero
-narrator_4.2,,homo-diegetic,intra-diegetic,internal
+narrator_3.2,watson_doyle3,homo-diegetic,intra-diegetic,internal
+narrator_4.1,watson_lipo,homo-diegetic,extra-diegetic,zero
+narrator_4.2,watson_lipo,homo-diegetic,intra-diegetic,internal
 narrator_5.1,,etero-diegetic,extra-diegetic,zero
