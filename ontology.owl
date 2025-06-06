@@ -89,9 +89,9 @@
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2"/>
     </owl:ObjectProperty>
     
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of -->
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart" -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P46">
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"/>
         <rdfs:range rdf:resource="https://example.org/ficto/NarrativeSegment"/>
     </owl:ObjectProperty>
@@ -107,7 +107,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P94">
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28"/>
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"/>
+        <rdfs:range rdf:resource="https://example.org/ficto/Narrative"/>
     </owl:ObjectProperty>
     
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole -->
@@ -138,6 +138,15 @@
         <rdfs:comment>This property allows to specify attributes of a character.</rdfs:comment>
         <rdfs:label>has Attribute</rdfs:label>
     </owl:ObjectProperty>
+
+    <!-- https://example.org/ficto/hasNarrativeFunction -->
+
+    <owl:ObjectProperty rdf:about="https://example.org/ficto/hasNarrativeFunction">
+  <rdfs:domain rdf:resource="https://example.org/ficto/Character"/>
+  <rdfs:range rdf:resource="https://example.org/ficto/Narrator"/>
+  <rdfs:comment>This property expresses the possibility of a character to be the narrator of the story.</rdfs:comment>
+        <rdfs:label>has Narrative Function</rdfs:label>
+</owl:ObjectProperty>
 
     <!-- https://example.org/ficto/hasFormOfSpeech -->
 
@@ -265,6 +274,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
+    <!-- https://example.org/ficto/Narrative -->
+
+    <owl:Class rdf:about="https://example.org/ficto/Narrative">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Narrative"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28"/>
+        <rdfs:comment>This class represents a fictional narrative as a structured, non-physical entity.</rdfs:comment>
+        <rdfs:label>Narrative</rdfs:label>
+    </owl:Class>
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character -->
 
