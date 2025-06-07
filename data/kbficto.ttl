@@ -78,7 +78,8 @@
 
 <https://w3id.org/ficto/Character/watson_fl> a frbroo:F38 ;
     rdfs:label "Dr Watson"^^xsd:string ;
-    dul:hasRole <https://w3id.org/ficto/Role/helper> .
+    dul:hasRole <https://w3id.org/ficto/Role/helper> ;
+    ficto:hasNarrativeFunction  <https://w3id.org/ficto/Narrator/narrator_5.1> .
 
 <https://w3id.org/ficto/CollectiveAgent/f&l> a lrmoo:F55 ;
     rdfs:label "Fruttero & Lucentini"^^xsd:string ;
